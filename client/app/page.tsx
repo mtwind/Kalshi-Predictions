@@ -1,26 +1,72 @@
 // client/app/page.tsx
 "use client";
 
+import MenuIcon from "@mui/icons-material/Menu";
+import RefreshIcon from "@mui/icons-material/Refresh";
 import {
+  Alert,
   AppBar,
   Box,
+  CircularProgress,
   Container,
   IconButton,
   Toolbar,
   Typography,
 } from "@mui/material";
-import { useState } from "react";
-// Import Grid2 (the new standard in MUI v6)
+import Grid from "@mui/material/Grid"; // Ensure using Grid2 if on MUI v6, or Grid on v5
+import { useEffect, useState } from "react";
+
+// Components
+import KalshiCard from "@/components/sections/KalshiCard";
 import NewsCard from "@/components/sections/NewsCard";
-import MenuIcon from "@mui/icons-material/Menu";
-import RefreshIcon from "@mui/icons-material/Refresh";
-import Grid from "@mui/material/Grid";
+import TmdbCard from "@/components/sections/TmdbCard";
+import WikipediaCard from "@/components/sections/WikipediaCard";
+import YoutubeCard from "@/components/sections/YoutubeCard";
+
+import { fetchLatestAnalysis, refreshAnalysis } from "../services/api";
 
 export default function Dashboard() {
-  const [refreshTrigger, setRefreshTrigger] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
+  const [data, setData] = useState<any>(null);
+  const [lastUpdated, setLastUpdated] = useState<string>("");
+  const [error, setError] = useState<string | null>(null);
 
-  const handleRefreshAll = () => {
-    setRefreshTrigger((prev) => prev + 1);
+  // Initial Load
+  useEffect(() => {
+    loadData();
+  }, []);
+
+  const loadData = async () => {
+    setLoading(true);
+    try {
+      const json = await fetchLatestAnalysis();
+      setData(json);
+      if (json.timestamp) {
+        setLastUpdated(new Date(json.timestamp).toLocaleTimeString());
+      }
+    } catch (err) {
+      console.error(err);
+      setError("Failed to load dashboard data.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleRefreshAll = async () => {
+    setRefreshing(true);
+    try {
+      const json = await refreshAnalysis();
+      setData(json);
+      if (json.timestamp) {
+        setLastUpdated(new Date(json.timestamp).toLocaleTimeString());
+      }
+    } catch (err) {
+      console.error(err);
+      setError("Failed to refresh data.");
+    } finally {
+      setRefreshing(false);
+    }
   };
 
   return (
@@ -39,42 +85,63 @@ export default function Dashboard() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Prediction Market Dashboard
           </Typography>
-          <IconButton color="inherit" onClick={handleRefreshAll}>
-            <RefreshIcon />
+
+          <Box mr={2}>
+            {lastUpdated && (
+              <Typography variant="caption" display="block" align="right">
+                Updated: {lastUpdated}
+              </Typography>
+            )}
+          </Box>
+
+          <IconButton
+            color="inherit"
+            onClick={handleRefreshAll}
+            disabled={refreshing}
+          >
+            {refreshing ? (
+              <CircularProgress size={24} color="inherit" />
+            ) : (
+              <RefreshIcon />
+            )}
           </IconButton>
         </Toolbar>
       </AppBar>
 
       <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
-        {/* Grid v2 Container */}
-        <Grid container spacing={3}>
-          {/* Row 1: High Priority */}
-          {/* <Grid size={{ xs: 12, md: 6, lg: 4 }}>
-            <KalshiCard refreshTrigger={refreshTrigger} />
-          </Grid> */}
-          {/* <Grid size={{ xs: 12, md: 6, lg: 4 }}>
-            <TrendsCard refreshTrigger={refreshTrigger} />
-          </Grid> */}
-          {/* <Grid size={{ xs: 12, md: 12, lg: 4 }}>
-            <WikipediaCard refreshTrigger={refreshTrigger} />
-          </Grid> */}
+        {error && (
+          <Alert severity="error" sx={{ mb: 3 }}>
+            {error}
+          </Alert>
+        )}
 
-          {/* Row 2: Media */}
-          {/* <Grid size={{ xs: 12, md: 6 }}>
-            <YoutubeCard refreshTrigger={refreshTrigger} />
-          </Grid> */}
-          {/* <Grid size={{ xs: 12, md: 6 }}>
-            <TmdbCard refreshTrigger={refreshTrigger} />
-          </Grid> */}
+        {loading ? (
+          <Box display="flex" justifyContent="center" mt={10}>
+            <CircularProgress />
+          </Box>
+        ) : (
+          <Grid container spacing={3}>
+            {/* Row 1: High Priority - Kalshi & Wikipedia */}
+            <Grid size={{ xs: 12, md: 6, lg: 4 }}>
+              <KalshiCard shows={data?.shows || []} />
+            </Grid>
+            <Grid size={{ xs: 12, md: 6, lg: 4 }}>
+              <WikipediaCard shows={data?.shows || []} />
+            </Grid>
+            <Grid size={{ xs: 12, md: 12, lg: 4 }}>
+              <TmdbCard shows={data?.shows || []} />
+            </Grid>
 
-          {/* Row 3: News */}
-          <Grid size={{ xs: 12 }}>
-            <NewsCard refreshTrigger={refreshTrigger} />
+            {/* Row 2: Media & News */}
+            <Grid size={{ xs: 12, md: 6 }}>
+              <YoutubeCard shows={data?.shows || []} />
+            </Grid>
+            <Grid size={{ xs: 12, md: 6 }}>
+              <NewsCard shows={data?.shows || []} />
+            </Grid>
           </Grid>
-        </Grid>
+        )}
       </Container>
     </Box>
   );
 }
-
-// Good. Now, i want to change things up so that all data is fetched by a single function, including kalshi markets, news data, wikipedia data, tmdb data, and youtube data. I have decided to exclude trend data sinc ethe api is not reliable. Can you build a backend function that does ALL of this? Basically, it should simulate reloading the page, so all data is fetched. Then, store this data in data/full-analysis. I have attached all relevant files for reference on strategy of data collection
