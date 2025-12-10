@@ -3,6 +3,7 @@
 This application is designed to gather data from various alternative data sources and use these to make informed predictions on specific Kalshi Markets.
 
 For now, there are three primary markets that we are looking to analyze:
+
 1. [Weather markets in Austin, Texas](https://kalshi.com/markets/kxhighaus/highest-temperature-in-austin/kxhighaus-25dec08)
 2. [Billboard Top 200 Charts](https://kalshi.com/markets/kxtopalbum/billboard-top-200-1/kxtopalbum-25dec20)
 3. [Top US Netflix Show](https://kalshi.com/markets/kxnetflixrankshow/netflix-tv-ranking/kxnetflixrankshow-25dec08)
@@ -23,7 +24,6 @@ For now, there are three primary markets that we are looking to analyze:
 - What if Netflix corrects its chart later
   - Kalshi still settles on the first published version
 
-
 ### What Data Sources Can We Use to Build Predictions?
 
 #### Popularity/Streaming Indicators:
@@ -34,7 +34,7 @@ For now, there are three primary markets that we are looking to analyze:
 #### Social Sentiment & Engagement
 
 1. X API or scrapers for real-time mentions, sentiment
-2. TikTok API / Hashtag analytics 
+2. TikTok API / Hashtag analytics
 3. Reddit forums for discussion
 
 #### Search Trends
@@ -42,3 +42,20 @@ For now, there are three primary markets that we are looking to analyze:
 1. Google trends for shows by name
 2. YouTube Analytics for to see how trailers perform
 3. Wikipedia pageviews
+
+## To Run
+
+**Server**
+
+```
+pip install -r requirements.txt
+uvicorn app:app --reload --port 8000
+[Swagger Docs](http://localhost:8000/docs)
+```
+
+**Client**
+
+```
+npm install
+npm run dev
+```
