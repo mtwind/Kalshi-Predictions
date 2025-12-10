@@ -16,9 +16,7 @@ import RefreshIcon from "@mui/icons-material/Refresh";
 import Grid from "@mui/material/Grid";
 
 import KalshiCard from "../components/sections/KalshiCard";
-import NewsCard from "../components/sections/NewsCard";
 import TmdbCard from "../components/sections/TmdbCard";
-import TrendsCard from "../components/sections/TrendsCard";
 import WikipediaCard from "../components/sections/WikipediaCard";
 import YoutubeCard from "../components/sections/YoutubeCard";
 
@@ -58,9 +56,9 @@ export default function Dashboard() {
           <Grid size={{ xs: 12, md: 6, lg: 4 }}>
             <KalshiCard refreshTrigger={refreshTrigger} />
           </Grid>
-          <Grid size={{ xs: 12, md: 6, lg: 4 }}>
+          {/* <Grid size={{ xs: 12, md: 6, lg: 4 }}>
             <TrendsCard refreshTrigger={refreshTrigger} />
-          </Grid>
+          </Grid> */}
           <Grid size={{ xs: 12, md: 12, lg: 4 }}>
             <WikipediaCard refreshTrigger={refreshTrigger} />
           </Grid>
@@ -74,11 +72,13 @@ export default function Dashboard() {
           </Grid>
 
           {/* Row 3: News */}
-          <Grid size={{ xs: 12 }}>
+          {/* <Grid size={{ xs: 12 }}>
             <NewsCard refreshTrigger={refreshTrigger} />
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </Box>
   );
 }
+
+// Good. Now, i want to change things up so that all data is fetched by a single function, including kalshi markets, news data, wikipedia data, tmdb data, and youtube data. I have decided to exclude trend data sinc ethe api is not reliable. Can you build a backend function that does ALL of this? Basically, it should simulate reloading the page, so all data is fetched. Then, store this data in data/full-analysis. I have attached all relevant files for reference on strategy of data collection

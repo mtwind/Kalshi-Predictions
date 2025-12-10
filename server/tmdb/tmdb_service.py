@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import os
+import math
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -31,8 +32,11 @@ def _save_payload(prefix: str, payload: dict) -> str:
     ts = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
     filename = f"{prefix}-{ts}.json"
     path = DATA_DIR / filename
-    with path.open("w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
+    try:
+        with path.open("w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2)
+    except Exception:
+        pass
     return str(path)
 
 
@@ -46,7 +50,6 @@ def _get(path: str, params: Optional[Dict] = None) -> Dict:
     try:
         r.raise_for_status()
     except requests.HTTPError:
-        # Bubble TMDB's error up
         raise HTTPException(status_code=r.status_code, detail=r.text)
 
     return r.json()
@@ -60,10 +63,6 @@ def search_tv_show(
     first_air_date_year: Optional[int] = None,
     page: int = 1,
 ) -> Dict:
-    """
-    Search TV shows by name.
-    Returns TMDB's search results; each result contains id, name, popularity, etc.
-    """
     params: Dict = {
         "query": query,
         "language": language,
@@ -77,14 +76,8 @@ def search_tv_show(
 
     payload = {
         "query": query,
-        "language": language,
-        "first_air_date_year": first_air_date_year,
-        "page": page,
-        "total_results": data.get("total_results", 0),
         "results": data.get("results", []),
-        "raw": data,
     }
-
     _save_payload(f"search-tv-{_slugify(query)}", payload)
     return payload
 
@@ -92,36 +85,24 @@ def search_tv_show(
 # ---------- 2) TV show details ----------
 
 def get_tv_details(tv_id: int, language: str = "en-US") -> Dict:
-    """
-    Get details for a TV show by TMDB id.
-    Contains popularity, vote_average, vote_count, genres, etc.
-    """
     params = {"language": language}
     data = _get(f"/tv/{tv_id}", params=params)
 
-    # pull out a normalized subset plus the full raw object
     subset = {
         "id": data.get("id"),
         "name": data.get("name"),
-        "original_name": data.get("original_name"),
-        "overview": data.get("overview"),
-        "first_air_date": data.get("first_air_date"),
         "popularity": data.get("popularity"),
         "vote_average": data.get("vote_average"),
         "vote_count": data.get("vote_count"),
-        "number_of_seasons": data.get("number_of_seasons"),
-        "number_of_episodes": data.get("number_of_episodes"),
+        "first_air_date": data.get("first_air_date"),
         "genres": data.get("genres", []),
-        "origin_country": data.get("origin_country", []),
     }
 
     payload = {
         "tv_id": tv_id,
-        "language": language,
         "summary": subset,
         "raw": data,
     }
-
     _save_payload(f"tv-details-{tv_id}", payload)
     return payload
 
@@ -129,19 +110,94 @@ def get_tv_details(tv_id: int, language: str = "en-US") -> Dict:
 # ---------- 3) Trending TV shows ----------
 
 def get_trending_tv(time_window: str = "day", language: str = "en-US") -> Dict:
-    """
-    Get trending TV shows.
-    time_window: "day" or "week"
-    """
     data = _get(f"/trending/tv/{time_window}", params={"language": language})
-
+    
+    results = data.get("results", [])
     payload = {
         "time_window": time_window,
-        "language": language,
-        "count": len(data.get("results", [])),
-        "results": data.get("results", []),
-        "raw": data,
+        "count": len(results),
+        "results": results,
     }
-
     _save_payload(f"trending-tv-{time_window}", payload)
+    return payload
+
+
+# ---------- 4) NEW: Deep Analysis & Score ----------
+
+def get_tmdb_analysis(show_name: str) -> Dict:
+    """
+    Orchestrates a deep analysis for TMDB:
+    1. Search for Show -> Get ID
+    2. Fetch Details (Ratings, Pop)
+    3. Check Global Trending Status
+    4. Calculate 'TMDB Score' (0-100)
+    """
+    
+    # 1. Search
+    search_res = search_tv_show(query=show_name)
+    results = search_res.get("results", [])
+    
+    if not results:
+        # Return empty/zero stats if not found
+        return {
+            "name": show_name,
+            "found": False,
+            "tmdb_score": 0,
+            "vote_average": 0,
+            "vote_count": 0,
+            "popularity": 0,
+            "trending_rank": None
+        }
+
+    # Assume first result is the best match
+    best_match = results[0]
+    tv_id = best_match["id"]
+    
+    # 2. Details
+    details_res = get_tv_details(tv_id)
+    summary = details_res["summary"]
+    
+    # 3. Trending Check
+    # We fetch the weekly trending list to see if this show is hot right now
+    trending_res = get_trending_tv(time_window="week")
+    trending_rank = None
+    
+    for idx, item in enumerate(trending_res.get("results", [])):
+        if item["id"] == tv_id:
+            trending_rank = idx + 1
+            break
+            
+    # 4. Score Calculation (0-100)
+    # A. Rating Score (Max 70): (Vote Average / 10) * 70
+    rating_component = (summary.get("vote_average", 0) / 10) * 70
+    
+    # B. Popularity Score (Max 20): Log scale
+    # Pop 100 ~= 10pts, Pop 1000+ ~= 20pts
+    pop = summary.get("popularity", 0)
+    pop_component = 0
+    if pop > 1:
+        # log10(100) = 2, log10(1000) = 3. 
+        # We want approx 20 pts for viral shows.
+        pop_component = min(math.log10(pop) * 6, 20)
+        
+    # C. Trending Bonus (Max 10)
+    trending_bonus = 10 if trending_rank else 0
+    
+    final_score = rating_component + pop_component + trending_bonus
+    
+    # Cap at 100 (rare, but possible with massive popularity)
+    final_score = min(final_score, 100)
+
+    payload = {
+        "name": summary["name"],
+        "found": True,
+        "tmdb_score": round(final_score, 1),
+        "vote_average": round(summary.get("vote_average", 0), 1),
+        "vote_count": summary.get("vote_count", 0),
+        "popularity": int(summary.get("popularity", 0)),
+        "trending_rank": trending_rank,
+        "first_air_date": summary.get("first_air_date"),
+    }
+    
+    _save_payload(f"analysis-{_slugify(show_name)}", payload)
     return payload

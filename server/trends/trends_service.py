@@ -14,9 +14,17 @@ DATA_DIR = Path("data/trends")
 DATA_DIR.mkdir(exist_ok=True)
 
 # Shared pytrends client
-pytrends = TrendReq(hl="en-US", tz=-300)  # US-ish timezone (UTC-5)
-
-
+pytrends = TrendReq(
+    hl="en-US", 
+    tz=-300, 
+    retries=3, 
+    backoff_factor=1,  # Wait 1s, 2s, 4s between retries
+    requests_args={
+        'headers': {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
+        }
+    }
+)
 # ---------- Utility helpers ----------
 
 def slugify(value: str) -> str:
