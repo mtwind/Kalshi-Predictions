@@ -29,10 +29,10 @@ class NewsSearchRequest(BaseModel):
         20,
         ge=1,
         le=100,
-        description="Maximum number of articles",
+        description="Maximum number of articles (default 20 for better sampling)",
     )
     sort_by: str = Field(
-        "publishedAt",
+        "relevance",
         description="publishedAt | relevance | popularity",
     )
 

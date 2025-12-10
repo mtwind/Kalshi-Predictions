@@ -12,3 +12,4 @@ httpx
 tenacity
 python-dateutil
 cryptography
+vaderSentiment

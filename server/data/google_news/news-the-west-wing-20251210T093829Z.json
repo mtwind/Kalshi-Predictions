@@ -1,0 +1,292 @@
+{
+  "query": "\"The West Wing\"",
+  "from_date": "2025-11-10",
+  "to_date": "2025-12-10",
+  "language": "en",
+  "max_results": 100,
+  "sort_by": "publishedAt",
+  "count": 10,
+  "average_sentiment": 0.3324,
+  "articles": [
+    {
+      "title": "New OTT releases this week: From 'Single Papa' to 'The West Wing', full list of Netflix shows you can binge watch this December",
+      "description": "New OTT releases movies: Netflix is reportedly set to acquire Warner Bros for $82.7 billion, gaining control of major franchises. Meanwhile, Paramount Skydance has launched a competing $108.4 billion bid for Warner Bros Discovery, creating uncertainty. December also brings new Netflix releases like 'Single Papa,' 'Man Vs. Baby,' and 'Wake Up Dead Man: A Knives Out Mystery.'",
+      "content": "Synopsis\nNew OTT releases movies: Netflix is reportedly set to acquire Warner Bros for $82.7 billion, gaining control of major franchises. Meanwhile, Paramount Skydance has launched a competing $108.4 billion bid for Warner Bros Discovery, creating u... [4298 chars]",
+      "url": "https://economictimes.indiatimes.com/news/new-updates/new-ott-releases-this-week-from-single-papa-to-the-west-wing-full-list-of-netflix-shows-you-can-binge-this-december/articleshow/125862239.cms",
+      "image": "https://img.etimg.com/thumb/msid-125862336,width-1200,height-630,imgsize-2369847,overlay-economictimes/articleshow.jpg",
+      "published_at": "2025-12-09T05:32:00Z",
+      "source_name": "The Economic Times",
+      "source_url": "https://economictimes.indiatimes.com",
+      "sentiment_score": 0.7003
+    },
+    {
+      "title": "White House 'Censorship' Grievance Fantasy Kicks Into High Gear",
+      "description": "United States Secretary of State Marco Rubio and Vice President JD Vance and members of the US delegation in the West Wing Lobby of the White House, Friday,",
+      "content": "Sometimes stories, like yuletide spirits, come in threes. When it comes to the ongoing transatlantic battle over digital regulations, three separate stories drew headlines this week that together indicate an escalation of the dispute between Washingt... [5046 chars]",
+      "url": "https://www.europesays.com/2617114/",
+      "image": "https://www.europesays.com/wp-content/uploads/2025/12/1765054404_e08705b2a3b6817a98cc47f7aeba0388426a90a7-1200x675.png",
+      "published_at": "2025-12-06T20:52:51Z",
+      "source_name": "EUROPE SAYS",
+      "source_url": "https://www.europesays.com",
+      "sentiment_score": -0.4588
+    },
+    {
+      "title": "Trump, 79, Adds New Sign to Remind Him Where He Works",
+      "description": "Both the Oval Office and the West Wing have been labeled for the president’s convenience.",
+      "content": "President Donald Trump has continued his campaign to transform the White House with two unusual additions: permanent signs outside the Oval Office and the West Wing.\nThe gold signs are in the same cursive script as Trump’s \"Presidential Walk of Fame\"... [2463 chars]",
+      "url": "https://www.thedailybeast.com/trump-79-adds-new-sign-to-remind-him-where-he-works/",
+      "image": "https://www.thedailybeast.com/resizer/v2/SYNN23CCUVBAHPJICZILEHCZYA.jpg?smart=true&auth=9c89c2afc605bcc5ad4275275c13459d9b8497ecd18206fdbc5a05356e954613&width=1200&height=630",
+      "published_at": "2025-12-06T04:20:16Z",
+      "source_name": "The Daily Beast",
+      "source_url": "https://www.thedailybeast.com",
+      "sentiment_score": 0.4404
+    },
+    {
+      "title": "Inside Trump’s push to make the White House ballroom as big as possible",
+      "description": "The latest plan, which officials said was still preliminary, calls for a ballroom much larger than the West Wing and the Executive Mansion.",
+      "content": "It might have seemed an odd pairing: a man who designs cathedrals working for a man who once built casinos, and is now president of the United States.\nBut McCrery Architects got to work on the initial drawings for the project, sketching out a design ... [7522 chars]",
+      "url": "https://www.bostonglobe.com/2025/11/29/nation/inside-trumps-push-make-white-house-ballroom-big-possible/",
+      "image": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/WN6AYQHNIE2IKCX44STIC7KA6A.jpg?auth=1c06a447db765820ca814ac8928c14455598021dfa38c3b8a65785d33afab93b&width=1440",
+      "published_at": "2025-11-29T20:48:19Z",
+      "source_name": "The Boston Globe",
+      "source_url": "https://www.bostonglobe.com",
+      "sentiment_score": 0.0644
+    },
+    {
+      "title": "Charlie Sheen Blasts His Father Martin Sheen for Attacking Trump Right After He Brokered Gaza Peace Deal",
+      "description": "Actor Charlie Sheen said his father's criticism of President Donald Trump was poorly timed because the \"West Wing\" star's attack came on the same day that Trump was the toast of the world due to his Gaza peace deal.",
+      "content": "Actor Charlie Sheen said his father’s criticism of President Donald Trump was poorly timed because the West Wing star’s attack came on the same day that Trump was the toast of the world due to his Gaza peace deal.\nCharlie appeared on The Megyn Kelly ... [2185 chars]",
+      "url": "https://www.breitbart.com/entertainment/2025/11/24/charlie-sheen-blasts-his-father-martin-sheen-for-attacking-trump-right-after-he-brokered-gaza-peace-deal/",
+      "image": "https://media.breitbart.com/media/2025/11/CharlieSheenMartinSheen-640x335.jpg",
+      "published_at": "2025-11-24T05:44:10Z",
+      "source_name": "Breitbart News Network",
+      "source_url": "https://www.breitbart.com",
+      "sentiment_score": -0.5423
+    },
+    {
+      "title": "Trump faces a ticking clock on healthcare costs",
+      "description": "The fast-approaching expiration of Affordable Care Act tax credits has prompted a series of crisis meetings in the West Wing over a path forward on Capitol Hill.",
+      "content": "Republicans won a significant political victory this month when moderate Senate Democrats joined them to end the longest government shutdown in U.S. history, relenting from a showdown over the rising costs of healthcare.\nBut the fight is already back... [4858 chars]",
+      "url": "https://www.latimes.com/politics/newsletter/2025-11-20/trump-healthcare-premiums-megabill",
+      "image": "https://ca-times.brightspotcdn.com/dims4/default/6e76300/2147483647/strip/true/crop/4000x2100+0+284/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Faa%2Ff6%2F66db233745cbb2994d91c230fcd6%2Fgettyimages-2246828179.jpg",
+      "published_at": "2025-11-20T11:00:00Z",
+      "source_name": "Los Angeles Times",
+      "source_url": "https://www.latimes.com",
+      "sentiment_score": -0.09
+    },
+    {
+      "title": "A Must-Watch For Diplomat Fans",
+      "description": "If you loved Netflix's The Diplomat but binged all 8 episodes of season 3 in a weekend and need something new, The West Wing is here for you.",
+      "content": "If you loved The Diplomat, then you should definitely check out The West Wing when it comes to Netflix in December. The Diplomat season 3 dropped on October 16, 2025, and like any good Netflix subscriber, most fans probably ended up watching all eigh... [2045 chars]",
+      "url": "https://screenrant.com/the-diplomat-netflix-west-wing-replacement-show/",
+      "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/11/the-diplomat_jvwvaj-1.jpg?w=1600&h=900&fit=crop",
+      "published_at": "2025-11-18T21:00:18Z",
+      "source_name": "Screen Rant",
+      "source_url": "https://screenrant.com",
+      "sentiment_score": 0.961
+    },
+    {
+      "title": "The West Wing Returns to Netflix After Years Long Absence",
+      "description": "The West Wing is returning to Netflix after years away, giving viewers another chance to stream one of TV’s most influential series.",
+      "content": "Since Netflix first became a streaming service, many shows have been given a second life after being licensed to the company. A perfect example of that is the fact that Netflix turned Schitt’s Creek into one of the most talked-about shows in the worl... [2595 chars]",
+      "url": "https://www.mensjournal.com/entertainment/a-show-everyone-needs-to-see-at-least-once-is-finally-returning-to-netflix",
+      "image": "https://www.mensjournal.com/.image/w_1200,h_630,g_auto,c_fill/MjE1MTEyMDkzMjMyMjc3MDEx/in-this-photo-illustration-the-netflix-logo-is-seen.jpg",
+      "published_at": "2025-11-18T04:29:47Z",
+      "source_name": "Men's Journal",
+      "source_url": "https://www.mensjournal.com",
+      "sentiment_score": 0.8832
+    },
+    {
+      "title": "The West Wing Creator John Wells Sets New Political Drama The Aisle At Netflix",
+      "description": "The West Wing showrunner sets a new political drama series at Netflix nearly two decades after the Emmy-winning NBC series came to an end.",
+      "content": "The West Wing showrunner, John Wells, has set a new political drama series on Netflix, The Aisle. Wells executive-produced and eventually assumed the role of showrunner and head writer of NBC's Emmy-winning series, which aired for seven seasons from ... [1491 chars]",
+      "url": "https://screenrant.com/the-aisle-netflix-political-show-john-wells-west-wing/",
+      "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/10/the-west-wing-martin-sheen.jpg?w=1600&h=900&fit=crop",
+      "published_at": "2025-11-17T22:39:14Z",
+      "source_name": "Screen Rant",
+      "source_url": "https://screenrant.com",
+      "sentiment_score": 0.6124
+    },
+    {
+      "title": "Netflix Sets Political Drama The Aisle From John Wells & Phoebe Fisher",
+      "description": "It marks a return to Washington for The West Wing EP Well and Cruel Intentions co-creator Fisher.",
+      "content": "EXCLUSIVE: John Wells, one of the creative forces behind NBC drama series The West Wing, is heading back to The District for his latest project.\nDeadline understands that Wells has teamed up with Phoebe Fisher, one of the creators and showrunners beh... [2322 chars]",
+      "url": "https://deadline.com/2025/11/netflix-the-aisle-john-wells-phoebe-fisher-political-drama-1236620588/",
+      "image": "https://deadline.com/wp-content/uploads/2025/11/John-Wells.jpg?w=1024",
+      "published_at": "2025-11-17T21:49:12Z",
+      "source_name": "Deadline",
+      "source_url": "https://deadline.com",
+      "sentiment_score": 0.7531
+    }
+  ],
+  "raw": {
+    "information": {
+      "realTimeArticles": {
+        "message": "Real-time news data is only available on paid plans. Free plan has a 12-hour delay. Upgrade your plan here to remove the delay: https://gnews.io/change-plan"
+      }
+    },
+    "totalArticles": 483,
+    "articles": [
+      {
+        "id": "e46c17361108d6ffde202b1d3593997d",
+        "title": "New OTT releases this week: From 'Single Papa' to 'The West Wing', full list of Netflix shows you can binge watch this December",
+        "description": "New OTT releases movies: Netflix is reportedly set to acquire Warner Bros for $82.7 billion, gaining control of major franchises. Meanwhile, Paramount Skydance has launched a competing $108.4 billion bid for Warner Bros Discovery, creating uncertainty. December also brings new Netflix releases like 'Single Papa,' 'Man Vs. Baby,' and 'Wake Up Dead Man: A Knives Out Mystery.'",
+        "content": "Synopsis\nNew OTT releases movies: Netflix is reportedly set to acquire Warner Bros for $82.7 billion, gaining control of major franchises. Meanwhile, Paramount Skydance has launched a competing $108.4 billion bid for Warner Bros Discovery, creating u... [4298 chars]",
+        "url": "https://economictimes.indiatimes.com/news/new-updates/new-ott-releases-this-week-from-single-papa-to-the-west-wing-full-list-of-netflix-shows-you-can-binge-this-december/articleshow/125862239.cms",
+        "image": "https://img.etimg.com/thumb/msid-125862336,width-1200,height-630,imgsize-2369847,overlay-economictimes/articleshow.jpg",
+        "publishedAt": "2025-12-09T05:32:00Z",
+        "lang": "en",
+        "source": {
+          "id": "5464668c1f0466950a0b2fab5249ec6c",
+          "name": "The Economic Times",
+          "url": "https://economictimes.indiatimes.com",
+          "country": "in"
+        }
+      },
+      {
+        "id": "74b7eedb59d8d67c78b36a25db644e90",
+        "title": "White House 'Censorship' Grievance Fantasy Kicks Into High Gear",
+        "description": "United States Secretary of State Marco Rubio and Vice President JD Vance and members of the US delegation in the West Wing Lobby of the White House, Friday,",
+        "content": "Sometimes stories, like yuletide spirits, come in threes. When it comes to the ongoing transatlantic battle over digital regulations, three separate stories drew headlines this week that together indicate an escalation of the dispute between Washingt... [5046 chars]",
+        "url": "https://www.europesays.com/2617114/",
+        "image": "https://www.europesays.com/wp-content/uploads/2025/12/1765054404_e08705b2a3b6817a98cc47f7aeba0388426a90a7-1200x675.png",
+        "publishedAt": "2025-12-06T20:52:51Z",
+        "lang": "en",
+        "source": {
+          "id": "ed23d65928efaec6669dd2212a773d9f",
+          "name": "EUROPE SAYS",
+          "url": "https://www.europesays.com",
+          "country": "us"
+        }
+      },
+      {
+        "id": "2f986f09128003e56a4cffaa5176311b",
+        "title": "Trump, 79, Adds New Sign to Remind Him Where He Works",
+        "description": "Both the Oval Office and the West Wing have been labeled for the president’s convenience.",
+        "content": "President Donald Trump has continued his campaign to transform the White House with two unusual additions: permanent signs outside the Oval Office and the West Wing.\nThe gold signs are in the same cursive script as Trump’s \"Presidential Walk of Fame\"... [2463 chars]",
+        "url": "https://www.thedailybeast.com/trump-79-adds-new-sign-to-remind-him-where-he-works/",
+        "image": "https://www.thedailybeast.com/resizer/v2/SYNN23CCUVBAHPJICZILEHCZYA.jpg?smart=true&auth=9c89c2afc605bcc5ad4275275c13459d9b8497ecd18206fdbc5a05356e954613&width=1200&height=630",
+        "publishedAt": "2025-12-06T04:20:16Z",
+        "lang": "en",
+        "source": {
+          "id": "dd4c720b98e562405eba2c628af5bfd0",
+          "name": "The Daily Beast",
+          "url": "https://www.thedailybeast.com",
+          "country": "us"
+        }
+      },
+      {
+        "id": "dc62fab872c671aa466ae1f0c7e8fdfb",
+        "title": "Inside Trump’s push to make the White House ballroom as big as possible",
+        "description": "The latest plan, which officials said was still preliminary, calls for a ballroom much larger than the West Wing and the Executive Mansion.",
+        "content": "It might have seemed an odd pairing: a man who designs cathedrals working for a man who once built casinos, and is now president of the United States.\nBut McCrery Architects got to work on the initial drawings for the project, sketching out a design ... [7522 chars]",
+        "url": "https://www.bostonglobe.com/2025/11/29/nation/inside-trumps-push-make-white-house-ballroom-big-possible/",
+        "image": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/WN6AYQHNIE2IKCX44STIC7KA6A.jpg?auth=1c06a447db765820ca814ac8928c14455598021dfa38c3b8a65785d33afab93b&width=1440",
+        "publishedAt": "2025-11-29T20:48:19Z",
+        "lang": "en",
+        "source": {
+          "id": "0d429ea54fdbe8e34c582aa31bc81aba",
+          "name": "The Boston Globe",
+          "url": "https://www.bostonglobe.com",
+          "country": "us"
+        }
+      },
+      {
+        "id": "add620da6cda2798558ea3906e85a28c",
+        "title": "Charlie Sheen Blasts His Father Martin Sheen for Attacking Trump Right After He Brokered Gaza Peace Deal",
+        "description": "Actor Charlie Sheen said his father's criticism of President Donald Trump was poorly timed because the \"West Wing\" star's attack came on the same day that Trump was the toast of the world due to his Gaza peace deal.",
+        "content": "Actor Charlie Sheen said his father’s criticism of President Donald Trump was poorly timed because the West Wing star’s attack came on the same day that Trump was the toast of the world due to his Gaza peace deal.\nCharlie appeared on The Megyn Kelly ... [2185 chars]",
+        "url": "https://www.breitbart.com/entertainment/2025/11/24/charlie-sheen-blasts-his-father-martin-sheen-for-attacking-trump-right-after-he-brokered-gaza-peace-deal/",
+        "image": "https://media.breitbart.com/media/2025/11/CharlieSheenMartinSheen-640x335.jpg",
+        "publishedAt": "2025-11-24T05:44:10Z",
+        "lang": "en",
+        "source": {
+          "id": "85b540771682043e2a9f294068f5345b",
+          "name": "Breitbart News Network",
+          "url": "https://www.breitbart.com",
+          "country": "us"
+        }
+      },
+      {
+        "id": "0a95bf92665f993926f436c4a652b2ac",
+        "title": "Trump faces a ticking clock on healthcare costs",
+        "description": "The fast-approaching expiration of Affordable Care Act tax credits has prompted a series of crisis meetings in the West Wing over a path forward on Capitol Hill.",
+        "content": "Republicans won a significant political victory this month when moderate Senate Democrats joined them to end the longest government shutdown in U.S. history, relenting from a showdown over the rising costs of healthcare.\nBut the fight is already back... [4858 chars]",
+        "url": "https://www.latimes.com/politics/newsletter/2025-11-20/trump-healthcare-premiums-megabill",
+        "image": "https://ca-times.brightspotcdn.com/dims4/default/6e76300/2147483647/strip/true/crop/4000x2100+0+284/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Faa%2Ff6%2F66db233745cbb2994d91c230fcd6%2Fgettyimages-2246828179.jpg",
+        "publishedAt": "2025-11-20T11:00:00Z",
+        "lang": "en",
+        "source": {
+          "id": "492abf277b7277432148b61b21ddc836",
+          "name": "Los Angeles Times",
+          "url": "https://www.latimes.com",
+          "country": "us"
+        }
+      },
+      {
+        "id": "c0d7988ab82bef2f8500a23ed22c1ffc",
+        "title": "A Must-Watch For Diplomat Fans",
+        "description": "If you loved Netflix's The Diplomat but binged all 8 episodes of season 3 in a weekend and need something new, The West Wing is here for you.",
+        "content": "If you loved The Diplomat, then you should definitely check out The West Wing when it comes to Netflix in December. The Diplomat season 3 dropped on October 16, 2025, and like any good Netflix subscriber, most fans probably ended up watching all eigh... [2045 chars]",
+        "url": "https://screenrant.com/the-diplomat-netflix-west-wing-replacement-show/",
+        "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/11/the-diplomat_jvwvaj-1.jpg?w=1600&h=900&fit=crop",
+        "publishedAt": "2025-11-18T21:00:18Z",
+        "lang": "en",
+        "source": {
+          "id": "6b8b6fae575a37200ef9ef50109518f5",
+          "name": "Screen Rant",
+          "url": "https://screenrant.com",
+          "country": "us"
+        }
+      },
+      {
+        "id": "ab672076998e50558c459029d76c3994",
+        "title": "The West Wing Returns to Netflix After Years Long Absence",
+        "description": "The West Wing is returning to Netflix after years away, giving viewers another chance to stream one of TV’s most influential series.",
+        "content": "Since Netflix first became a streaming service, many shows have been given a second life after being licensed to the company. A perfect example of that is the fact that Netflix turned Schitt’s Creek into one of the most talked-about shows in the worl... [2595 chars]",
+        "url": "https://www.mensjournal.com/entertainment/a-show-everyone-needs-to-see-at-least-once-is-finally-returning-to-netflix",
+        "image": "https://www.mensjournal.com/.image/w_1200,h_630,g_auto,c_fill/MjE1MTEyMDkzMjMyMjc3MDEx/in-this-photo-illustration-the-netflix-logo-is-seen.jpg",
+        "publishedAt": "2025-11-18T04:29:47Z",
+        "lang": "en",
+        "source": {
+          "id": "008ce2da04589e32a64a74ae048c6810",
+          "name": "Men's Journal",
+          "url": "https://www.mensjournal.com",
+          "country": "us"
+        }
+      },
+      {
+        "id": "8984488691337fee623b938ac3ae5a31",
+        "title": "The West Wing Creator John Wells Sets New Political Drama The Aisle At Netflix",
+        "description": "The West Wing showrunner sets a new political drama series at Netflix nearly two decades after the Emmy-winning NBC series came to an end.",
+        "content": "The West Wing showrunner, John Wells, has set a new political drama series on Netflix, The Aisle. Wells executive-produced and eventually assumed the role of showrunner and head writer of NBC's Emmy-winning series, which aired for seven seasons from ... [1491 chars]",
+        "url": "https://screenrant.com/the-aisle-netflix-political-show-john-wells-west-wing/",
+        "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/10/the-west-wing-martin-sheen.jpg?w=1600&h=900&fit=crop",
+        "publishedAt": "2025-11-17T22:39:14Z",
+        "lang": "en",
+        "source": {
+          "id": "6b8b6fae575a37200ef9ef50109518f5",
+          "name": "Screen Rant",
+          "url": "https://screenrant.com",
+          "country": "us"
+        }
+      },
+      {
+        "id": "319112a0d71a19c4257c2c94e9e4a751",
+        "title": "Netflix Sets Political Drama The Aisle From John Wells & Phoebe Fisher",
+        "description": "It marks a return to Washington for The West Wing EP Well and Cruel Intentions co-creator Fisher.",
+        "content": "EXCLUSIVE: John Wells, one of the creative forces behind NBC drama series The West Wing, is heading back to The District for his latest project.\nDeadline understands that Wells has teamed up with Phoebe Fisher, one of the creators and showrunners beh... [2322 chars]",
+        "url": "https://deadline.com/2025/11/netflix-the-aisle-john-wells-phoebe-fisher-political-drama-1236620588/",
+        "image": "https://deadline.com/wp-content/uploads/2025/11/John-Wells.jpg?w=1024",
+        "publishedAt": "2025-11-17T21:49:12Z",
+        "lang": "en",
+        "source": {
+          "id": "9a0aedadcf2d0a6144f3064cb144bae4",
+          "name": "Deadline",
+          "url": "https://deadline.com",
+          "country": "us"
+        }
+      }
+    ]
+  }
+}

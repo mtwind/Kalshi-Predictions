@@ -1,0 +1,292 @@
+{
+  "query": "\"The Abandons\"",
+  "from_date": "2025-11-10",
+  "to_date": "2025-12-10",
+  "language": "en",
+  "max_results": 100,
+  "sort_by": "publishedAt",
+  "count": 10,
+  "average_sentiment": -0.0481,
+  "articles": [
+    {
+      "title": "Netflix' Answer to 'Yellowstone' Is 'The Abandons' + It's GOOD",
+      "description": "Learn about Netflix's 'The Abandons,' a new Western that quickly rose in popularity despite mixed reviews.",
+      "content": "After the success of Paramount series Yellowstone, Netflix has launched what seems to be their version of an 1800's based Western, The Abandons, from Kurt Sutter, the creator of the wildly successful FX show Sons of Anarchy.\nEven though the show's fi... [1526 chars]",
+      "url": "https://kdhlradio.com/ixp/204/p/netflix-the-abandons-new-yellowstone/",
+      "image": "https://townsquare.media/site/204/files/2025/12/attachment-untitled-design-2025-12-09t061000-849.jpg?w=1200&q=75&format=natural",
+      "published_at": "2025-12-09T14:00:16Z",
+      "source_name": "kdhlradio.com",
+      "source_url": "https://kdhlradio.com",
+      "sentiment_score": 0.87
+    },
+    {
+      "title": "Discover Where Netflix's Western Drama Was Shot",
+      "description": "Netflix's new Western series The Abandons may have been set in Washington Territory, but it was actually shot in a different part of North America.",
+      "content": "Warning: This article contains SPOILERS for The Abandons season 1!\nNetflix’s latest flagship Western series The Abandons has been riding high in Netflix’s top 2 for several days, now. Given the spectacular mountain backdrops and wild badlands we see ... [3511 chars]",
+      "url": "https://screenrant.com/the-abandons-netflix-filming-locations-explained/",
+      "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/12/tcdaban_zx019.jpg?w=1600&h=900&fit=crop",
+      "published_at": "2025-12-09T13:45:18Z",
+      "source_name": "Screen Rant",
+      "source_url": "https://screenrant.com",
+      "sentiment_score": -0.7988
+    },
+    {
+      "title": "Netflix' Answer to 'Yellowstone' Is 'The Abandons' + It's GOOD",
+      "description": "Learn about Netflix's 'The Abandons,' a new Western that quickly rose in popularity despite mixed reviews.",
+      "content": "After the success of Paramount series Yellowstone, Netflix has launched what seems to be their version of an 1800's based Western, The Abandons, from Kurt Sutter, the creator of the wildly successful FX show Sons of Anarchy.\nEven though the show's fi... [1526 chars]",
+      "url": "https://tasteofcountry.com/netflix-the-abandons-new-yellowstone/",
+      "image": "https://townsquare.media/site/204/files/2025/12/attachment-untitled-design-2025-12-09t061000-849.jpg?w=1200&q=75&format=natural",
+      "published_at": "2025-12-09T09:00:16Z",
+      "source_name": "Taste of Country",
+      "source_url": "https://tasteofcountry.com",
+      "sentiment_score": 0.87
+    },
+    {
+      "title": "Netflix’s ‘The Abandons’ Is Getting Savaged By Critics",
+      "description": "Should you watch The Abandons on Netflix? Depends on if you watch to believe critics and audiences. It has a great cast, however.",
+      "content": "There’s nothing like a good TV Western, but the emphasis there is on “good.” And Netflix’s new series The Abandons does not seem to fall into that category, unfortunately.\nThe Abandons, a Netflix original series, has just debuted on the service, comi... [2535 chars]",
+      "url": "https://www.forbes.com/sites/paultassi/2025/12/08/netflixs-the-abandons-is-getting-savaged-by-critics-on-rotten-tomatoes/",
+      "image": "https://imageio.forbes.com/specials-images/imageserve/6936f66ce2b2c9107fb2994a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "published_at": "2025-12-08T16:03:47Z",
+      "source_name": "Forbes",
+      "source_url": "https://www.forbes.com",
+      "sentiment_score": -0.8627
+    },
+    {
+      "title": "The Abandons season 2 prospects as stars discuss future",
+      "description": "The Abandons has started streaming on Netflix with mixed reviews from critics",
+      "content": "The Abandons has recently launched on Netflix, featuring a stellar Western drama cast including Game of Thrones sensation Lena Headey and The Fall favourite Gillian Anderson.\nCritics and audiences have delivered divided verdicts on the series, with s... [1865 chars]",
+      "url": "https://www.express.co.uk/showbiz/tv-radio/2143316/abandons-season-2-netflix-yet-renew-gillian-anderson-western-drama",
+      "image": "https://cdn.images.express.co.uk/img/dynamic/20/1200x630/6598579.jpg",
+      "published_at": "2025-12-07T10:59:00Z",
+      "source_name": "Daily Express",
+      "source_url": "https://www.express.co.uk",
+      "sentiment_score": -0.743
+    },
+    {
+      "title": "Has The Abandons been renewed for season 2?",
+      "description": "The Netflix Western has divided viewers since it started airing.",
+      "content": "The Netflix Western has divided viewers since it started airing.\nThe Abandons has just started airing on Netflix and the Western drama stars some huge names like Game of Thrones legend Lena Headey and The Fall icon Gillian Anderson.\nThe series has re... [1741 chars]",
+      "url": "https://www.mirror.co.uk/tv/tv-news/abandons-been-renewed-season-2-36364179",
+      "image": "https://i2-prod.mirror.co.uk/article36349879.ece/ALTERNATES/s1200/1_ABANDONS_240924_MC_00117r.jpg",
+      "published_at": "2025-12-07T10:57:02Z",
+      "source_name": "The Mirror",
+      "source_url": "https://www.mirror.co.uk",
+      "sentiment_score": 0.0516
+    },
+    {
+      "title": "5 best shows like 'The Abandons' to stream after the Netflix Western drama",
+      "description": "Kim Kardashian's legal drama is getting savaged, but you can find similar shows to watch instead",
+      "content": "Although the Western genre has struggled on the big screen for the past few years (well, decades), it’s never been more alive on television. Whether it’s a classic series set in the Old West or a modern reinterpretation, the Western is not just survi... [4092 chars]",
+      "url": "https://www.tomsguide.com/entertainment/streaming/5-best-shows-like-the-abandons-to-stream-after-the-netflix-western-drama",
+      "image": "https://cdn.mos.cms.futurecdn.net/49oEoFSPAmP4kh8fNAWH3H-1200-80.jpg",
+      "published_at": "2025-12-07T07:00:00Z",
+      "source_name": "Tom's Guide",
+      "source_url": "https://www.tomsguide.com",
+      "sentiment_score": -0.3821
+    },
+    {
+      "title": "Lena Headey Delivers Another Unforgettable Mother Role In ‘The Abandons’",
+      "description": "Lena Headey on how unique the dynamic is between her character and Gillian Anderson's in Netflix's 'The Abandons.'",
+      "content": "Lena Headey has built a very successful career portraying strong, powerful women. Few actors can weaponize motherhood the way she can.\nIn Netflix’s female-led Western The Abandons, Headey has returned to familiar territory, but with a twist as Fiona ... [3843 chars]",
+      "url": "https://www.forbes.com/sites/danafeldman/2025/12/06/lena-headey-delivers-another-unforgettable-mother-role-in-the-abandons/",
+      "image": "https://imageio.forbes.com/specials-images/imageserve/6934fde4507171d2b55b7f16/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "published_at": "2025-12-07T04:24:10Z",
+      "source_name": "Forbes",
+      "source_url": "https://www.forbes.com",
+      "sentiment_score": 0.6245
+    },
+    {
+      "title": "5 Reasons Critics Are Slamming the New Western Series",
+      "description": "The Abandons should have been a homerun Yellowstone competitor for Netflix, but after Kurt Sutter left the show, critics agree it's disappointing.",
+      "content": "Netflix's The Abandons premiered in early December 2025 with Gillian Anderson and Lena Headey as feuding matriarchs in 1854 Washington Territory. The series follows wealthy mining mogul Constance Van Ness (Anderson) as she attempts to seize land from... [6522 chars]",
+      "url": "https://screenrant.com/the-abandons-netflix-rotten-tomatoes-reviews-bad-reasons/",
+      "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/12/gillian-anderson-as-constance-in-netflix-s-the-abandons.jpg?w=1600&h=900&fit=crop",
+      "published_at": "2025-12-07T00:00:16Z",
+      "source_name": "Screen Rant",
+      "source_url": "https://screenrant.com",
+      "sentiment_score": -0.8481
+    },
+    {
+      "title": "Is 'The Abandons' Based on a True Story? All About the Real Mafia Inspiration",
+      "description": "Kurt Sutter's Western series 'The Abandons' premiered on Netflix in December 2025. Here's everything to know about whether or not 'The Abandons' was based on a true story.",
+      "content": "Kurt Sutter's gripping drama The Abandons may take place in what used to be known as the Washington Territory, but the story was inspired by real-life crime families across the Atlantic.\n“I’ve always been fascinated with the origins of La Cosa Nostra... [4191 chars]",
+      "url": "https://people.com/the-abandons-true-story-11862307",
+      "image": "https://people.com/thmb/FKLSxQsf9byrzzxr6eA7EkSMAFI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x292:1001x294)/the-abandons-lucas-til-gillian-anderson-120425-faa15a289ef7427688630ada62418677.jpg",
+      "published_at": "2025-12-06T12:15:00Z",
+      "source_name": "People.com",
+      "source_url": "https://people.com",
+      "sentiment_score": 0.7376
+    }
+  ],
+  "raw": {
+    "information": {
+      "realTimeArticles": {
+        "message": "Real-time news data is only available on paid plans. Free plan has a 12-hour delay. Upgrade your plan here to remove the delay: https://gnews.io/change-plan"
+      }
+    },
+    "totalArticles": 96,
+    "articles": [
+      {
+        "id": "679859e4de2c4395bf9738cf2a47545c",
+        "title": "Netflix' Answer to 'Yellowstone' Is 'The Abandons' + It's GOOD",
+        "description": "Learn about Netflix's 'The Abandons,' a new Western that quickly rose in popularity despite mixed reviews.",
+        "content": "After the success of Paramount series Yellowstone, Netflix has launched what seems to be their version of an 1800's based Western, The Abandons, from Kurt Sutter, the creator of the wildly successful FX show Sons of Anarchy.\nEven though the show's fi... [1526 chars]",
+        "url": "https://kdhlradio.com/ixp/204/p/netflix-the-abandons-new-yellowstone/",
+        "image": "https://townsquare.media/site/204/files/2025/12/attachment-untitled-design-2025-12-09t061000-849.jpg?w=1200&q=75&format=natural",
+        "publishedAt": "2025-12-09T14:00:16Z",
+        "lang": "en",
+        "source": {
+          "id": "5aae5fe6e1dd05e3e536f88a30126534",
+          "name": "kdhlradio.com",
+          "url": "https://kdhlradio.com",
+          "country": "us"
+        }
+      },
+      {
+        "id": "3a6fcda0522d202e66de966abfed6ca6",
+        "title": "Discover Where Netflix's Western Drama Was Shot",
+        "description": "Netflix's new Western series The Abandons may have been set in Washington Territory, but it was actually shot in a different part of North America.",
+        "content": "Warning: This article contains SPOILERS for The Abandons season 1!\nNetflix’s latest flagship Western series The Abandons has been riding high in Netflix’s top 2 for several days, now. Given the spectacular mountain backdrops and wild badlands we see ... [3511 chars]",
+        "url": "https://screenrant.com/the-abandons-netflix-filming-locations-explained/",
+        "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/12/tcdaban_zx019.jpg?w=1600&h=900&fit=crop",
+        "publishedAt": "2025-12-09T13:45:18Z",
+        "lang": "en",
+        "source": {
+          "id": "6b8b6fae575a37200ef9ef50109518f5",
+          "name": "Screen Rant",
+          "url": "https://screenrant.com",
+          "country": "us"
+        }
+      },
+      {
+        "id": "c85e6983c392ccad28b1715842cb0e84",
+        "title": "Netflix' Answer to 'Yellowstone' Is 'The Abandons' + It's GOOD",
+        "description": "Learn about Netflix's 'The Abandons,' a new Western that quickly rose in popularity despite mixed reviews.",
+        "content": "After the success of Paramount series Yellowstone, Netflix has launched what seems to be their version of an 1800's based Western, The Abandons, from Kurt Sutter, the creator of the wildly successful FX show Sons of Anarchy.\nEven though the show's fi... [1526 chars]",
+        "url": "https://tasteofcountry.com/netflix-the-abandons-new-yellowstone/",
+        "image": "https://townsquare.media/site/204/files/2025/12/attachment-untitled-design-2025-12-09t061000-849.jpg?w=1200&q=75&format=natural",
+        "publishedAt": "2025-12-09T09:00:16Z",
+        "lang": "en",
+        "source": {
+          "id": "92089e86cbded5b9d06cfb3c377f45d2",
+          "name": "Taste of Country",
+          "url": "https://tasteofcountry.com",
+          "country": "us"
+        }
+      },
+      {
+        "id": "7b366870350a99082785af97e62e5fbb",
+        "title": "Netflix’s ‘The Abandons’ Is Getting Savaged By Critics",
+        "description": "Should you watch The Abandons on Netflix? Depends on if you watch to believe critics and audiences. It has a great cast, however.",
+        "content": "There’s nothing like a good TV Western, but the emphasis there is on “good.” And Netflix’s new series The Abandons does not seem to fall into that category, unfortunately.\nThe Abandons, a Netflix original series, has just debuted on the service, comi... [2535 chars]",
+        "url": "https://www.forbes.com/sites/paultassi/2025/12/08/netflixs-the-abandons-is-getting-savaged-by-critics-on-rotten-tomatoes/",
+        "image": "https://imageio.forbes.com/specials-images/imageserve/6936f66ce2b2c9107fb2994a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "publishedAt": "2025-12-08T16:03:47Z",
+        "lang": "en",
+        "source": {
+          "id": "a0300bc9a6e9d5b317bd6f614767231f",
+          "name": "Forbes",
+          "url": "https://www.forbes.com",
+          "country": "us"
+        }
+      },
+      {
+        "id": "a8121d9bdbaa1d1a3fd535ba886a11c2",
+        "title": "The Abandons season 2 prospects as stars discuss future",
+        "description": "The Abandons has started streaming on Netflix with mixed reviews from critics",
+        "content": "The Abandons has recently launched on Netflix, featuring a stellar Western drama cast including Game of Thrones sensation Lena Headey and The Fall favourite Gillian Anderson.\nCritics and audiences have delivered divided verdicts on the series, with s... [1865 chars]",
+        "url": "https://www.express.co.uk/showbiz/tv-radio/2143316/abandons-season-2-netflix-yet-renew-gillian-anderson-western-drama",
+        "image": "https://cdn.images.express.co.uk/img/dynamic/20/1200x630/6598579.jpg",
+        "publishedAt": "2025-12-07T10:59:00Z",
+        "lang": "en",
+        "source": {
+          "id": "c97ef3cad273a1993c998ca7ddcc5212",
+          "name": "Daily Express",
+          "url": "https://www.express.co.uk",
+          "country": "gb"
+        }
+      },
+      {
+        "id": "ae92452e98854417a85665266691778c",
+        "title": "Has The Abandons been renewed for season 2?",
+        "description": "The Netflix Western has divided viewers since it started airing.",
+        "content": "The Netflix Western has divided viewers since it started airing.\nThe Abandons has just started airing on Netflix and the Western drama stars some huge names like Game of Thrones legend Lena Headey and The Fall icon Gillian Anderson.\nThe series has re... [1741 chars]",
+        "url": "https://www.mirror.co.uk/tv/tv-news/abandons-been-renewed-season-2-36364179",
+        "image": "https://i2-prod.mirror.co.uk/article36349879.ece/ALTERNATES/s1200/1_ABANDONS_240924_MC_00117r.jpg",
+        "publishedAt": "2025-12-07T10:57:02Z",
+        "lang": "en",
+        "source": {
+          "id": "105bb16685822879671e4bad332aeec9",
+          "name": "The Mirror",
+          "url": "https://www.mirror.co.uk",
+          "country": "gb"
+        }
+      },
+      {
+        "id": "cb5ea913e681752b96fb485fe7febe57",
+        "title": "5 best shows like 'The Abandons' to stream after the Netflix Western drama",
+        "description": "Kim Kardashian's legal drama is getting savaged, but you can find similar shows to watch instead",
+        "content": "Although the Western genre has struggled on the big screen for the past few years (well, decades), it’s never been more alive on television. Whether it’s a classic series set in the Old West or a modern reinterpretation, the Western is not just survi... [4092 chars]",
+        "url": "https://www.tomsguide.com/entertainment/streaming/5-best-shows-like-the-abandons-to-stream-after-the-netflix-western-drama",
+        "image": "https://cdn.mos.cms.futurecdn.net/49oEoFSPAmP4kh8fNAWH3H-1200-80.jpg",
+        "publishedAt": "2025-12-07T07:00:00Z",
+        "lang": "en",
+        "source": {
+          "id": "dcc4f4c6eb081eb8a9ee9cca215517f5",
+          "name": "Tom's Guide",
+          "url": "https://www.tomsguide.com",
+          "country": "us"
+        }
+      },
+      {
+        "id": "147affd9f0b90ddfcc19c5738e0b011f",
+        "title": "Lena Headey Delivers Another Unforgettable Mother Role In ‘The Abandons’",
+        "description": "Lena Headey on how unique the dynamic is between her character and Gillian Anderson's in Netflix's 'The Abandons.'",
+        "content": "Lena Headey has built a very successful career portraying strong, powerful women. Few actors can weaponize motherhood the way she can.\nIn Netflix’s female-led Western The Abandons, Headey has returned to familiar territory, but with a twist as Fiona ... [3843 chars]",
+        "url": "https://www.forbes.com/sites/danafeldman/2025/12/06/lena-headey-delivers-another-unforgettable-mother-role-in-the-abandons/",
+        "image": "https://imageio.forbes.com/specials-images/imageserve/6934fde4507171d2b55b7f16/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "publishedAt": "2025-12-07T04:24:10Z",
+        "lang": "en",
+        "source": {
+          "id": "a0300bc9a6e9d5b317bd6f614767231f",
+          "name": "Forbes",
+          "url": "https://www.forbes.com",
+          "country": "us"
+        }
+      },
+      {
+        "id": "c5dc697edd0e44541cfdfd8cfeddf277",
+        "title": "5 Reasons Critics Are Slamming the New Western Series",
+        "description": "The Abandons should have been a homerun Yellowstone competitor for Netflix, but after Kurt Sutter left the show, critics agree it's disappointing.",
+        "content": "Netflix's The Abandons premiered in early December 2025 with Gillian Anderson and Lena Headey as feuding matriarchs in 1854 Washington Territory. The series follows wealthy mining mogul Constance Van Ness (Anderson) as she attempts to seize land from... [6522 chars]",
+        "url": "https://screenrant.com/the-abandons-netflix-rotten-tomatoes-reviews-bad-reasons/",
+        "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/12/gillian-anderson-as-constance-in-netflix-s-the-abandons.jpg?w=1600&h=900&fit=crop",
+        "publishedAt": "2025-12-07T00:00:16Z",
+        "lang": "en",
+        "source": {
+          "id": "6b8b6fae575a37200ef9ef50109518f5",
+          "name": "Screen Rant",
+          "url": "https://screenrant.com",
+          "country": "us"
+        }
+      },
+      {
+        "id": "4d3ad4790d6b6ac8a12e310507819ce6",
+        "title": "Is 'The Abandons' Based on a True Story? All About the Real Mafia Inspiration",
+        "description": "Kurt Sutter's Western series 'The Abandons' premiered on Netflix in December 2025. Here's everything to know about whether or not 'The Abandons' was based on a true story.",
+        "content": "Kurt Sutter's gripping drama The Abandons may take place in what used to be known as the Washington Territory, but the story was inspired by real-life crime families across the Atlantic.\n“I’ve always been fascinated with the origins of La Cosa Nostra... [4191 chars]",
+        "url": "https://people.com/the-abandons-true-story-11862307",
+        "image": "https://people.com/thmb/FKLSxQsf9byrzzxr6eA7EkSMAFI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x292:1001x294)/the-abandons-lucas-til-gillian-anderson-120425-faa15a289ef7427688630ada62418677.jpg",
+        "publishedAt": "2025-12-06T12:15:00Z",
+        "lang": "en",
+        "source": {
+          "id": "c837db3560dbe304554f10dddd97c3c8",
+          "name": "People.com",
+          "url": "https://people.com",
+          "country": "us"
+        }
+      }
+    ]
+  }
+}
