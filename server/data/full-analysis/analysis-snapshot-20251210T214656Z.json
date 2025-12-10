@@ -1,0 +1,1430 @@
+{
+  "timestamp": "2025-12-10T21:46:56.885950",
+  "shows": [
+    {
+      "show_name": "Sean Combs: The Reckoning",
+      "final_composite_score": 56.7,
+      "fair_price": 28.8,
+      "recommendation": "BUY NO",
+      "edge_points": 37.2,
+      "kalshi": {
+        "can_close_early": true,
+        "category": "",
+        "close_time": "2025-12-16T04:59:00Z",
+        "created_time": "2025-12-10T01:19:39.880278Z",
+        "custom_strike": {
+          "Show/Movie": "Sean Combs: The Reckoning: Season 1"
+        },
+        "early_close_condition": "The Netflix charts are updated on Tuesday. Therefore, the market will close at 11:59 PM ET the day before.",
+        "event_ticker": "KXNETFLIXRANKSHOW-25DEC15",
+        "expected_expiration_time": "2025-12-16T15:00:00Z",
+        "expiration_time": "2025-12-22T15:00:00Z",
+        "expiration_value": "",
+        "last_price": 66,
+        "last_price_dollars": "0.6600",
+        "latest_expiration_time": "2025-12-22T15:00:00Z",
+        "liquidity": 1464833,
+        "liquidity_dollars": "14648.3300",
+        "market_type": "binary",
+        "no_ask": 34,
+        "no_ask_dollars": "0.3400",
+        "no_bid": 18,
+        "no_bid_dollars": "0.1800",
+        "no_sub_title": "Sean Combs: The Reckoning: Season 1",
+        "notional_value": 100,
+        "notional_value_dollars": "1.0000",
+        "open_interest": 423,
+        "open_time": "2025-12-10T01:55:32Z",
+        "previous_price": 0,
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask": 0,
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid": 0,
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "linear_cent",
+        "price_ranges": [
+          {
+            "end": "1.0000",
+            "start": "0.0000",
+            "step": "0.0100"
+          }
+        ],
+        "response_price_units": "usd_cent",
+        "result": "",
+        "risk_limit_cents": 0,
+        "rules_primary": "If Sean Combs: The Reckoning: Season 1 is #1 on the Netflix Top 10 Shows in the United States on the chart published on Dec 16, 2025, then the market resolves to Yes.",
+        "rules_secondary": "The Netflix charts are updated on Tuesday. Therefore, the market will close at 11:59 PM ET the day before. The chart published on Dec 16, 2025 will be for the week ending the previous Sunday.",
+        "settlement_timer_seconds": 3600,
+        "status": "active",
+        "strike_type": "custom",
+        "subtitle": "Sean Combs: The Reckoning: Season 1",
+        "tick_size": 1,
+        "ticker": "KXNETFLIXRANKSHOW-25DEC15-SEA",
+        "title": "Top Netflix show on Dec 15, 2025?",
+        "volume": 478,
+        "volume_24h": 468,
+        "yes_ask": 82,
+        "yes_ask_dollars": "0.8200",
+        "yes_bid": 66,
+        "yes_bid_dollars": "0.6600",
+        "yes_sub_title": "Sean Combs: The Reckoning: Season 1"
+      },
+      "youtube": {
+        "show_name": "Sean Combs: The Reckoning",
+        "videos": [
+          {
+            "video_id": "iGyKtVA6ntI",
+            "title": "Sean Combs: The Reckoning | Official Teaser | Netflix",
+            "view_count": 1670875,
+            "like_count": 16450,
+            "comment_count": 2839,
+            "sentiment_score": 0.2903
+          },
+          {
+            "video_id": "2neW1njk1_A",
+            "title": "10 Shocking Revelations from Sean Combs: The Reckoning",
+            "view_count": 612775,
+            "like_count": 7375,
+            "comment_count": 1699,
+            "sentiment_score": -0.2062
+          },
+          {
+            "video_id": "AMfnrvPnLoE",
+            "title": "10 Celeb Reactions To Sean Combs: The Reckoning",
+            "view_count": 105722,
+            "like_count": 1882,
+            "comment_count": 457,
+            "sentiment_score": -0.0151
+          },
+          {
+            "video_id": "bUq1iZelYMo",
+            "title": "Sean Combs: The Reckoning - How It Was Made",
+            "view_count": 69509,
+            "like_count": 625,
+            "comment_count": 27,
+            "sentiment_score": -0.2672
+          },
+          {
+            "video_id": "fAxCsD2qF3M",
+            "title": "50 Cent Goes Off On Marlon Wayans Calling Him Out Over Diddy Netflix Docuseries \"The Reckoning\"",
+            "view_count": 115833,
+            "like_count": 708,
+            "comment_count": 797,
+            "sentiment_score": 0.0228
+          },
+          {
+            "video_id": "hcAn1ss-tgc",
+            "title": "Jeff Teague REACTS to Diddy documentary ‘Sean Combs: The Reckoning’ | Club 520",
+            "view_count": 33898,
+            "like_count": 808,
+            "comment_count": 124,
+            "sentiment_score": 0.1936
+          },
+          {
+            "video_id": "bm8_BkrHv5E",
+            "title": "Sean Combs: The Reckoning | What Really Happened to Tupac Shakur?",
+            "view_count": 1444,
+            "like_count": 37,
+            "comment_count": 6,
+            "sentiment_score": -0.1236
+          },
+          {
+            "video_id": "ZJMzGLHRQZo",
+            "title": "Sean Combs: The Reckoning – The DARK TRUTH About Bad Boys & Biggie’s | Full Episode",
+            "view_count": 23346,
+            "like_count": 306,
+            "comment_count": 30,
+            "sentiment_score": 0.3375
+          },
+          {
+            "video_id": "mRGBlhFZiI8",
+            "title": "50 Cent FINALLY BREAKS SILENCE On His Diddy Netflix Documentary - Sean Combs The Reckoning",
+            "view_count": 54671,
+            "like_count": 411,
+            "comment_count": 108,
+            "sentiment_score": 0.2601
+          },
+          {
+            "video_id": "4QSXAKfaz6I",
+            "title": "Sean Combs: The Reckoning | Official Breakdown - Episode 01",
+            "view_count": 630770,
+            "like_count": 7042,
+            "comment_count": 1794,
+            "sentiment_score": 0.0774
+          }
+        ],
+        "totals": {
+          "total_views": 3318843,
+          "total_likes": 35644,
+          "average_views": 331884,
+          "average_likes": 3564,
+          "like_percentage": 1.07,
+          "sentiment_average": 0.057,
+          "youtube_score": 61.1
+        }
+      },
+      "news": {
+        "show_name": "Sean Combs: The Reckoning",
+        "news_score": 43.0,
+        "sentiment_score": -0.23,
+        "article_count": 10,
+        "top_articles": [
+          {
+            "title": "Why did 50 Cent make a documentary about Diddy? Real reason",
+            "description": "Sean Combs: The Reckoning arrived on Netflix this week, and here's why 50 Cent made a whole documentary about the disgraced rapper.",
+            "url": "https://thetab.com/2025/12/10/so-why-did-50-cent-make-a-documentary-about-diddy-heres-the-real-reason",
+            "image": "https://cdn.thetab.com/wp-content/uploads/2025/12/10084332/Ellissas-Featured-Images-2025-12-10T084255.934.png",
+            "published_at": "2025-12-10T08:53:14Z",
+            "source_name": "The Tab",
+            "sentiment_score": -0.8873
+          },
+          {
+            "title": "Stranger Things & Diddy Doc Dominate Netflix In First Week Of December",
+            "description": "Stranger Things 5 was the most-streamed title of the week on Netflix, but Sean Combs: The Reckoning came in a close second",
+            "url": "https://deadline.com/2025/12/diddy-documentary-premiere-viewership-netflix-stranger-things-1236643705/",
+            "image": "https://deadline.com/wp-content/uploads/2025/12/Stranger-Things-Diddy-Combs-Sean-Combs-The-Reckoning.jpg?w=1024",
+            "published_at": "2025-12-09T20:00:00Z",
+            "source_name": "Deadline",
+            "sentiment_score": 0.128
+          }
+        ]
+      },
+      "tmdb": {
+        "name": "Sean Combs: The Reckoning",
+        "found": true,
+        "tmdb_score": 57.7,
+        "vote_average": 6.9,
+        "vote_count": 17,
+        "popularity": 32,
+        "trending_rank": null,
+        "first_air_date": "2025-12-02"
+      },
+      "wikipedia": {
+        "article_title": "Sean_Combs:_The_Reckoning",
+        "project": "en.wikipedia",
+        "access": "all-access",
+        "agent": "all-agents",
+        "granularity": "daily",
+        "start_date": "2025-12-03",
+        "end_date": "2025-12-10",
+        "count": 7,
+        "points": [
+          {
+            "date": "20251203",
+            "views": 38252
+          },
+          {
+            "date": "20251204",
+            "views": 36461
+          },
+          {
+            "date": "20251205",
+            "views": 35706
+          },
+          {
+            "date": "20251206",
+            "views": 50366
+          },
+          {
+            "date": "20251207",
+            "views": 64047
+          },
+          {
+            "date": "20251208",
+            "views": 63521
+          },
+          {
+            "date": "20251209",
+            "views": 52278
+          }
+        ],
+        "raw": {
+          "items": [
+            {
+              "project": "en.wikipedia",
+              "article": "Sean_Combs:_The_Reckoning",
+              "granularity": "daily",
+              "timestamp": "2025120300",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 38252
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "Sean_Combs:_The_Reckoning",
+              "granularity": "daily",
+              "timestamp": "2025120400",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 36461
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "Sean_Combs:_The_Reckoning",
+              "granularity": "daily",
+              "timestamp": "2025120500",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 35706
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "Sean_Combs:_The_Reckoning",
+              "granularity": "daily",
+              "timestamp": "2025120600",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 50366
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "Sean_Combs:_The_Reckoning",
+              "granularity": "daily",
+              "timestamp": "2025120700",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 64047
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "Sean_Combs:_The_Reckoning",
+              "granularity": "daily",
+              "timestamp": "2025120800",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 63521
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "Sean_Combs:_The_Reckoning",
+              "granularity": "daily",
+              "timestamp": "2025120900",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 52278
+            }
+          ]
+        },
+        "total_weekly_views": 340631,
+        "avg_daily_views": 48661,
+        "score": 21.0
+      }
+    },
+    {
+      "show_name": "Stranger Things",
+      "final_composite_score": 46.6,
+      "fair_price": 23.6,
+      "recommendation": "BUY YES",
+      "edge_points": 14.6,
+      "kalshi": {
+        "can_close_early": true,
+        "category": "",
+        "close_time": "2025-12-16T04:59:00Z",
+        "created_time": "2025-12-09T20:00:31.470068Z",
+        "custom_strike": {
+          "Show/Movie": "Stranger Things 5"
+        },
+        "early_close_condition": "The Netflix charts are updated on Tuesday. Therefore, the market will close at 11:59 PM ET the day before.",
+        "event_ticker": "KXNETFLIXRANKSHOW-25DEC15",
+        "expected_expiration_time": "2025-12-16T15:00:00Z",
+        "expiration_time": "2025-12-22T15:00:00Z",
+        "expiration_value": "",
+        "last_price": 9,
+        "last_price_dollars": "0.0900",
+        "latest_expiration_time": "2025-12-22T15:00:00Z",
+        "liquidity": 2268342,
+        "liquidity_dollars": "22683.4200",
+        "market_type": "binary",
+        "no_ask": 93,
+        "no_ask_dollars": "0.9300",
+        "no_bid": 91,
+        "no_bid_dollars": "0.9100",
+        "no_sub_title": "Stranger Things 5",
+        "notional_value": 100,
+        "notional_value_dollars": "1.0000",
+        "open_interest": 4553,
+        "open_time": "2025-12-10T01:00:00Z",
+        "previous_price": 0,
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask": 0,
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid": 0,
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "linear_cent",
+        "price_ranges": [
+          {
+            "end": "1.0000",
+            "start": "0.0000",
+            "step": "0.0100"
+          }
+        ],
+        "response_price_units": "usd_cent",
+        "result": "",
+        "risk_limit_cents": 0,
+        "rules_primary": "If Stranger Things 5 is #1 on the Netflix Top 10 Shows in the United States on the chart published on Dec 16, 2025, then the market resolves to Yes.",
+        "rules_secondary": "The Netflix charts are updated on Tuesday. Therefore, the market will close at 11:59 PM ET the day before. The chart published on Dec 16, 2025 will be for the week ending the previous Sunday.",
+        "settlement_timer_seconds": 3600,
+        "status": "active",
+        "strike_type": "custom",
+        "subtitle": "Stranger Things 5",
+        "tick_size": 1,
+        "ticker": "KXNETFLIXRANKSHOW-25DEC15-STR",
+        "title": "Top Netflix show on Dec 15, 2025?",
+        "volume": 4573,
+        "volume_24h": 4193,
+        "yes_ask": 9,
+        "yes_ask_dollars": "0.0900",
+        "yes_bid": 7,
+        "yes_bid_dollars": "0.0700",
+        "yes_sub_title": "Stranger Things 5"
+      },
+      "youtube": {
+        "show_name": "Stranger Things",
+        "videos": [
+          {
+            "video_id": "7kBYNannVQg",
+            "title": "Stranger Things 5 | Take a Break with Jake: Joe Keery | Netflix",
+            "view_count": 973217,
+            "like_count": 78029,
+            "comment_count": 570,
+            "sentiment_score": 0.3538
+          },
+          {
+            "video_id": "sOvwU38V2J8",
+            "title": "\"BECAUSE YOU'RE NOT BLACK?\" 😂 | Stranger Things S2.E2 | #shorts",
+            "view_count": 26140529,
+            "like_count": 209429,
+            "comment_count": 521,
+            "sentiment_score": 0.2321
+          },
+          {
+            "video_id": "cEcIG87bxno",
+            "title": "They Were Just Kids...",
+            "view_count": 2211438,
+            "like_count": 53743,
+            "comment_count": 984,
+            "sentiment_score": 0.1135
+          },
+          {
+            "video_id": "ZOX1lDlIbTE",
+            "title": "Inside the Making of Stranger Things Season 5!",
+            "view_count": 34794,
+            "like_count": 399,
+            "comment_count": 10,
+            "sentiment_score": 0.3829
+          },
+          {
+            "video_id": "d5R6bJhb9nc",
+            "title": "How Well Do You Know the \"Stranger Things\" Cast?",
+            "view_count": 2563637,
+            "like_count": 86401,
+            "comment_count": 2201,
+            "sentiment_score": 0.2155
+          },
+          {
+            "video_id": "wlBKZMw88sQ",
+            "title": "Stranger Things Cast Reveal Uncomfortable Truths in the Hot Seat | Vanity Fair",
+            "view_count": 4476092,
+            "like_count": 126750,
+            "comment_count": 3200,
+            "sentiment_score": 0.0302
+          },
+          {
+            "video_id": "PssKpzB0Ah0",
+            "title": "Stranger Things 5 | Official Trailer | Netflix",
+            "view_count": 22348981,
+            "like_count": 716631,
+            "comment_count": 36479,
+            "sentiment_score": 0.0027
+          },
+          {
+            "video_id": "IyQp9VxvN9g",
+            "title": "Sneaking Into Movies 🍿 | Stranger Things S3E2 #Shorts",
+            "view_count": 56344273,
+            "like_count": 816081,
+            "comment_count": 1340,
+            "sentiment_score": 0.3503
+          },
+          {
+            "video_id": "DzlcK4-LQgM",
+            "title": "Vecna Kills Patrick ☠️🔥 Stranger Things Season 5 #shorts #strangerthings",
+            "view_count": 17219006,
+            "like_count": 309379,
+            "comment_count": 1474,
+            "sentiment_score": -0.1518
+          }
+        ],
+        "totals": {
+          "total_views": 132311967,
+          "total_likes": 2396842,
+          "average_views": 14701329,
+          "average_likes": 266315,
+          "like_percentage": 1.81,
+          "sentiment_average": 0.1699,
+          "youtube_score": 79.2
+        }
+      },
+      "news": {
+        "show_name": "Stranger Things",
+        "news_score": 49.5,
+        "sentiment_score": -0.02,
+        "article_count": 10,
+        "top_articles": [
+          {
+            "title": "‘Stranger Things’ Season 5 Volume 2: NEW posters of Eleven, Will, Mike, Nancy, Steve and Jonathan unveiled; fans worried as THIS character has been left out",
+            "description": "News News: The new posters for 'Stranger Things' Season 5 Volume 2 have been released, but the absence of fan-favorite Robin has left viewers worried about her fate. The final season's second volume debuts on November 26 in India.",
+            "url": "https://timesofindia.indiatimes.com/web-series/news/english/stranger-things-season-5-volume-2-new-posters-of-eleven-will-mike-nancy-steve-and-jonathan-unveiled-fans-worried-as-this-character-has-been-left-out/articleshow/125884281.cms",
+            "image": "https://static.toiimg.com/thumb/msid-125884281,width-1070,height-580,imgsize-59056,resizemode-75,overlay-toi_sw,pt-32,y_pad-500/photo.jpg",
+            "published_at": "2025-12-10T06:46:00Z",
+            "source_name": "Times of India",
+            "sentiment_score": -0.5267
+          },
+          {
+            "title": "When 'Stranger Things' actress Winona Ryder revealed she was called 'unattractive' and 'not pretty enough' for Hollywood in the 1980s",
+            "description": "In a recent interview, Winona Ryder revealed that in the 1980s Hollywood deemed her 'unattractive,' shocking co-star David Harbour and fans alike. Despite these comments, Ryder pursued her passion as a character actor, highlighting the industry's challenging beauty standards.",
+            "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/when-stranger-things-actress-winona-ryder-revealed-she-was-called-unattractive-and-not-pretty-enough-for-hollywood-in-the-1980s/articleshow/125877156.cms",
+            "image": "https://static.toiimg.com/thumb/msid-125877164,width-1070,height-580,imgsize-58654,resizemode-75,overlay-toi_sw,pt-32,y_pad-500/photo.jpg",
+            "published_at": "2025-12-10T04:27:00Z",
+            "source_name": "Times of India",
+            "sentiment_score": -0.4268
+          }
+        ]
+      },
+      "tmdb": {
+        "name": "Stranger Things",
+        "found": true,
+        "tmdb_score": 87.6,
+        "vote_average": 8.6,
+        "vote_count": 19459,
+        "popularity": 794,
+        "trending_rank": 1,
+        "first_air_date": "2016-07-15"
+      },
+      "wikipedia": {
+        "article_title": "Stranger_Things",
+        "project": "en.wikipedia",
+        "access": "all-access",
+        "agent": "all-agents",
+        "granularity": "daily",
+        "start_date": "2025-12-03",
+        "end_date": "2025-12-10",
+        "count": 7,
+        "points": [
+          {
+            "date": "20251203",
+            "views": 152864
+          },
+          {
+            "date": "20251204",
+            "views": 132380
+          },
+          {
+            "date": "20251205",
+            "views": 115517
+          },
+          {
+            "date": "20251206",
+            "views": 114484
+          },
+          {
+            "date": "20251207",
+            "views": 119486
+          },
+          {
+            "date": "20251208",
+            "views": 106224
+          },
+          {
+            "date": "20251209",
+            "views": 89247
+          }
+        ],
+        "raw": {
+          "items": [
+            {
+              "project": "en.wikipedia",
+              "article": "Stranger_Things",
+              "granularity": "daily",
+              "timestamp": "2025120300",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 152864
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "Stranger_Things",
+              "granularity": "daily",
+              "timestamp": "2025120400",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 132380
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "Stranger_Things",
+              "granularity": "daily",
+              "timestamp": "2025120500",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 115517
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "Stranger_Things",
+              "granularity": "daily",
+              "timestamp": "2025120600",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 114484
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "Stranger_Things",
+              "granularity": "daily",
+              "timestamp": "2025120700",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 119486
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "Stranger_Things",
+              "granularity": "daily",
+              "timestamp": "2025120800",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 106224
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "Stranger_Things",
+              "granularity": "daily",
+              "timestamp": "2025120900",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 89247
+            }
+          ]
+        },
+        "total_weekly_views": 830202,
+        "avg_daily_views": 118600,
+        "score": 51.2
+      }
+    },
+    {
+      "show_name": "The West Wing",
+      "final_composite_score": 33.2,
+      "fair_price": 16.8,
+      "recommendation": "BUY YES",
+      "edge_points": 15.8,
+      "kalshi": {
+        "can_close_early": true,
+        "category": "",
+        "close_time": "2025-12-16T04:59:00Z",
+        "created_time": "2025-12-10T01:18:55.486641Z",
+        "custom_strike": {
+          "Show/Movie": "The West Wing: Season 1"
+        },
+        "early_close_condition": "The Netflix charts are updated on Tuesday. Therefore, the market will close at 11:59 PM ET the day before.",
+        "event_ticker": "KXNETFLIXRANKSHOW-25DEC15",
+        "expected_expiration_time": "2025-12-16T15:00:00Z",
+        "expiration_time": "2025-12-22T15:00:00Z",
+        "expiration_value": "",
+        "last_price": 1,
+        "last_price_dollars": "0.0100",
+        "latest_expiration_time": "2025-12-22T15:00:00Z",
+        "liquidity": 153935,
+        "liquidity_dollars": "1539.3500",
+        "market_type": "binary",
+        "no_ask": 100,
+        "no_ask_dollars": "1.0000",
+        "no_bid": 99,
+        "no_bid_dollars": "0.9900",
+        "no_sub_title": "The West Wing: Season 1",
+        "notional_value": 100,
+        "notional_value_dollars": "1.0000",
+        "open_interest": 153,
+        "open_time": "2025-12-10T01:54:44Z",
+        "previous_price": 0,
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask": 0,
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid": 0,
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "linear_cent",
+        "price_ranges": [
+          {
+            "end": "1.0000",
+            "start": "0.0000",
+            "step": "0.0100"
+          }
+        ],
+        "response_price_units": "usd_cent",
+        "result": "",
+        "risk_limit_cents": 0,
+        "rules_primary": "If The West Wing: Season 1 is #1 on the Netflix Top 10 Shows in the United States on the chart published on Dec 16, 2025, then the market resolves to Yes.",
+        "rules_secondary": "The Netflix charts are updated on Tuesday. Therefore, the market will close at 11:59 PM ET the day before. The chart published on Dec 16, 2025 will be for the week ending the previous Sunday.",
+        "settlement_timer_seconds": 3600,
+        "status": "active",
+        "strike_type": "custom",
+        "subtitle": "The West Wing: Season 1",
+        "tick_size": 1,
+        "ticker": "KXNETFLIXRANKSHOW-25DEC15-WES",
+        "title": "Top Netflix show on Dec 15, 2025?",
+        "volume": 153,
+        "volume_24h": 153,
+        "yes_ask": 1,
+        "yes_ask_dollars": "0.0100",
+        "yes_bid": 0,
+        "yes_bid_dollars": "0.0000",
+        "yes_sub_title": "The West Wing: Season 1"
+      },
+      "youtube": {
+        "show_name": "The West Wing",
+        "videos": [
+          {
+            "video_id": "410IRtLotS4",
+            "title": "Jed Bartlet's Finest Hour: Part 1 | The West Wing",
+            "view_count": 1227423,
+            "like_count": 8804,
+            "comment_count": 699,
+            "sentiment_score": 0.4489
+          },
+          {
+            "video_id": "jEmftGG21S0",
+            "title": "Let’s Shock Santos | The West Wing",
+            "view_count": 23490,
+            "like_count": 289,
+            "comment_count": 35,
+            "sentiment_score": 0.089
+          },
+          {
+            "video_id": "sEC9NzBeenE",
+            "title": "10 Unforgettable Moments | The West Wing",
+            "view_count": 934894,
+            "like_count": 7824,
+            "comment_count": 1008,
+            "sentiment_score": 0.388
+          },
+          {
+            "video_id": "AIHjoT19XpE",
+            "title": "President Bartlett kicks the bible thumpers butt!",
+            "view_count": 2274489,
+            "like_count": 29030,
+            "comment_count": 7172,
+            "sentiment_score": 0.2796
+          },
+          {
+            "video_id": "C8aIp0TAOBo",
+            "title": "Great Moments With Your Favorite Characters: Part 1 | The West Wing",
+            "view_count": 186282,
+            "like_count": 1839,
+            "comment_count": 172,
+            "sentiment_score": 0.4946
+          },
+          {
+            "video_id": "2WvG-AvDpRQ",
+            "title": "I’m Not Going to the Bunker | The West Wing",
+            "view_count": 183060,
+            "like_count": 2002,
+            "comment_count": 166,
+            "sentiment_score": 0.2835
+          },
+          {
+            "video_id": "sZ_Q-3AhoAs",
+            "title": "Donna’s on the Phone, It’s Bad News | The West Wing",
+            "view_count": 1071020,
+            "like_count": 6508,
+            "comment_count": 523,
+            "sentiment_score": 0.3623
+          },
+          {
+            "video_id": "8HE7r4rX04I",
+            "title": "Top 5 Memorable Speeches | The West Wing",
+            "view_count": 613249,
+            "like_count": 5826,
+            "comment_count": 452,
+            "sentiment_score": 0.3623
+          },
+          {
+            "video_id": "oElg8_vFMuo",
+            "title": "The Admirable Admiral Percy Fitzwallace | The West Wing",
+            "view_count": 1313176,
+            "like_count": 10617,
+            "comment_count": 981,
+            "sentiment_score": 0.4836
+          }
+        ],
+        "totals": {
+          "total_views": 7827083,
+          "total_likes": 72739,
+          "average_views": 869675,
+          "average_likes": 8082,
+          "like_percentage": 0.93,
+          "sentiment_average": 0.3546,
+          "youtube_score": 69.7
+        }
+      },
+      "news": {
+        "show_name": "The West Wing",
+        "news_score": 53.3,
+        "sentiment_score": 0.11,
+        "article_count": 10,
+        "top_articles": [
+          {
+            "title": "MP: Right-wing activists demonstrate against suspended Trinamool leader over 'Babri' masjid plan",
+            "description": "Ashoknagar/Bhopal (MP), Dec 9 (PTI) Police on Tuesday foiled a bid by Hindutva workers to paste certain posters on public toilets in Bhopal during a demonstration against the laying of the foundation stone of a Babri Masjid-styled mosque in West Bengal. Politics heated up after suspended TMC leader Humayun Kabir laid the foundation stone at […]",
+            "url": "https://theprint.in/india/mp-right-wing-activists-demonstrate-against-suspended-trinamool-leader-over-babri-masjid-plan/2802021/",
+            "image": "https://static.theprint.in/wp-content/uploads/2023/06/theprint_default_image_new.jpg",
+            "published_at": "2025-12-09T12:36:21Z",
+            "source_name": "ThePrint",
+            "sentiment_score": -0.296
+          },
+          {
+            "title": "New OTT releases this week: From 'Single Papa' to 'The West Wing', full list of Netflix shows you can binge watch this December",
+            "description": "New OTT releases movies: Netflix is reportedly set to acquire Warner Bros for $82.7 billion, gaining control of major franchises. Meanwhile, Paramount Skydance has launched a competing $108.4 billion bid for Warner Bros Discovery, creating uncertainty. December also brings new Netflix releases like 'Single Papa,' 'Man Vs. Baby,' and 'Wake Up Dead Man: A Knives Out Mystery.'",
+            "url": "https://economictimes.indiatimes.com/news/new-updates/new-ott-releases-this-week-from-single-papa-to-the-west-wing-full-list-of-netflix-shows-you-can-binge-this-december/articleshow/125862239.cms",
+            "image": "https://img.etimg.com/thumb/msid-125862336,width-1200,height-630,imgsize-2369847,overlay-economictimes/articleshow.jpg",
+            "published_at": "2025-12-09T05:32:00Z",
+            "source_name": "The Economic Times",
+            "sentiment_score": 0.7003
+          }
+        ]
+      },
+      "tmdb": {
+        "name": "The West Wing",
+        "found": true,
+        "tmdb_score": 66.3,
+        "vote_average": 8.3,
+        "vote_count": 534,
+        "popularity": 25,
+        "trending_rank": null,
+        "first_air_date": "1999-09-22"
+      },
+      "wikipedia": {
+        "article_title": "The_West_Wing",
+        "project": "en.wikipedia",
+        "access": "all-access",
+        "agent": "all-agents",
+        "granularity": "daily",
+        "start_date": "2025-12-03",
+        "end_date": "2025-12-10",
+        "count": 7,
+        "points": [
+          {
+            "date": "20251203",
+            "views": 2702
+          },
+          {
+            "date": "20251204",
+            "views": 2779
+          },
+          {
+            "date": "20251205",
+            "views": 2662
+          },
+          {
+            "date": "20251206",
+            "views": 2563
+          },
+          {
+            "date": "20251207",
+            "views": 2575
+          },
+          {
+            "date": "20251208",
+            "views": 4179
+          },
+          {
+            "date": "20251209",
+            "views": 3526
+          }
+        ],
+        "raw": {
+          "items": [
+            {
+              "project": "en.wikipedia",
+              "article": "The_West_Wing",
+              "granularity": "daily",
+              "timestamp": "2025120300",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 2702
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "The_West_Wing",
+              "granularity": "daily",
+              "timestamp": "2025120400",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 2779
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "The_West_Wing",
+              "granularity": "daily",
+              "timestamp": "2025120500",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 2662
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "The_West_Wing",
+              "granularity": "daily",
+              "timestamp": "2025120600",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 2563
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "The_West_Wing",
+              "granularity": "daily",
+              "timestamp": "2025120700",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 2575
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "The_West_Wing",
+              "granularity": "daily",
+              "timestamp": "2025120800",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 4179
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "The_West_Wing",
+              "granularity": "daily",
+              "timestamp": "2025120900",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 3526
+            }
+          ]
+        },
+        "total_weekly_views": 20986,
+        "avg_daily_views": 2998,
+        "score": 1.3
+      }
+    },
+    {
+      "show_name": "The Abandons",
+      "final_composite_score": 33.0,
+      "fair_price": 16.7,
+      "recommendation": "BUY YES",
+      "edge_points": 11.7,
+      "kalshi": {
+        "can_close_early": true,
+        "category": "",
+        "close_time": "2025-12-16T04:59:00Z",
+        "created_time": "2025-12-10T01:14:58.803346Z",
+        "custom_strike": {
+          "Show/Movie": "The Abandons: Season 1"
+        },
+        "early_close_condition": "The Netflix charts are updated on Tuesday. Therefore, the market will close at 11:59 PM ET the day before.",
+        "event_ticker": "KXNETFLIXRANKSHOW-25DEC15",
+        "expected_expiration_time": "2025-12-16T15:00:00Z",
+        "expiration_time": "2025-12-22T15:00:00Z",
+        "expiration_value": "",
+        "last_price": 5,
+        "last_price_dollars": "0.0500",
+        "latest_expiration_time": "2025-12-22T15:00:00Z",
+        "liquidity": 192958,
+        "liquidity_dollars": "1929.5800",
+        "market_type": "binary",
+        "no_ask": 100,
+        "no_ask_dollars": "1.0000",
+        "no_bid": 95,
+        "no_bid_dollars": "0.9500",
+        "no_sub_title": "The Abandons: Season 1",
+        "notional_value": 100,
+        "notional_value_dollars": "1.0000",
+        "open_interest": 1559,
+        "open_time": "2025-12-10T01:53:52Z",
+        "previous_price": 0,
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask": 0,
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid": 0,
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "linear_cent",
+        "price_ranges": [
+          {
+            "end": "1.0000",
+            "start": "0.0000",
+            "step": "0.0100"
+          }
+        ],
+        "response_price_units": "usd_cent",
+        "result": "",
+        "risk_limit_cents": 0,
+        "rules_primary": "If The Abandons: Season 1 is #1 on the Netflix Top 10 Shows in the United States on the chart published on Dec 16, 2025, then the market resolves to Yes.",
+        "rules_secondary": "The Netflix charts are updated on Tuesday. Therefore, the market will close at 11:59 PM ET the day before. The chart published on Dec 16, 2025 will be for the week ending the previous Sunday.",
+        "settlement_timer_seconds": 3600,
+        "status": "active",
+        "strike_type": "custom",
+        "subtitle": "The Abandons: Season 1",
+        "tick_size": 1,
+        "ticker": "KXNETFLIXRANKSHOW-25DEC15-ABA",
+        "title": "Top Netflix show on Dec 15, 2025?",
+        "volume": 1559,
+        "volume_24h": 1559,
+        "yes_ask": 5,
+        "yes_ask_dollars": "0.0500",
+        "yes_bid": 0,
+        "yes_bid_dollars": "0.0000",
+        "yes_sub_title": "The Abandons: Season 1"
+      },
+      "youtube": {
+        "show_name": "The Abandons",
+        "videos": [
+          {
+            "video_id": "UtZ1qya0X2M",
+            "title": "The Abandons | Official Trailer | Netflix",
+            "view_count": 1167940,
+            "like_count": 9737,
+            "comment_count": 836,
+            "sentiment_score": 0.3881
+          },
+          {
+            "video_id": "jmyZhO8CodU",
+            "title": "THE ABANDONS Netflix Ending Explained & Review",
+            "view_count": 7555,
+            "like_count": 94,
+            "comment_count": 66,
+            "sentiment_score": -0.0157
+          },
+          {
+            "video_id": "Ck2-oA36xfE",
+            "title": "THE ABANDONS Season 2: Release Date & Everything We Know",
+            "view_count": 4282,
+            "like_count": 44,
+            "comment_count": 15,
+            "sentiment_score": 0.2013
+          },
+          {
+            "video_id": "Iuwt3YRiweE",
+            "title": "Elias and Trisha - Their Story [The Abandons]",
+            "view_count": 43127,
+            "like_count": 434,
+            "comment_count": 14,
+            "sentiment_score": 0.3656
+          },
+          {
+            "video_id": "qs-sn9I1KA4",
+            "title": "The Abandons: Everything You Should Know",
+            "view_count": 22416,
+            "like_count": 189,
+            "comment_count": 44,
+            "sentiment_score": 0.2384
+          },
+          {
+            "video_id": "W-eTASb-3yo",
+            "title": "THE ABANDONS SEASON 1 Ending Explained | Who Survived the Fire?",
+            "view_count": 1340,
+            "like_count": 13,
+            "comment_count": 1,
+            "sentiment_score": 0.0
+          },
+          {
+            "video_id": "VhydKb6CuWM",
+            "title": "THE ABANDONS Season 1 Ending Explained | No Winners, Only Survivors",
+            "view_count": 532,
+            "like_count": 5,
+            "comment_count": 2,
+            "sentiment_score": 0.4404
+          },
+          {
+            "video_id": "nLDzybpB1fQ",
+            "title": "The Abandons Season 1 Full Recap | Complete Breakdown & Ending Explained",
+            "view_count": 2114,
+            "like_count": 29,
+            "comment_count": 0,
+            "sentiment_score": 0.0
+          },
+          {
+            "video_id": "0NRa9Ym7Kpw",
+            "title": "The Abandons | Official Hindi Trailer | Netflix Original Series",
+            "view_count": 5983,
+            "like_count": 74,
+            "comment_count": 4,
+            "sentiment_score": 0.4589
+          },
+          {
+            "video_id": "QsoA_O8lA-w",
+            "title": "The Abandons Season 2 Sneak Peek | The Abandons | SEASON 2 | Netflix",
+            "view_count": 2639,
+            "like_count": 16,
+            "comment_count": 1,
+            "sentiment_score": 0.6239
+          }
+        ],
+        "totals": {
+          "total_views": 1257928,
+          "total_likes": 10635,
+          "average_views": 125792,
+          "average_likes": 1063,
+          "like_percentage": 0.85,
+          "sentiment_average": 0.2701,
+          "youtube_score": 60.0
+        }
+      },
+      "news": {
+        "show_name": "The Abandons",
+        "news_score": 40.1,
+        "sentiment_score": -0.33,
+        "article_count": 10,
+        "top_articles": [
+          {
+            "title": "Chinese Chip Heavyweight Abandons Acquisition of Server Firm",
+            "description": "Chinese Chip Heavyweight Abandons Acquisition of Server Firm - Hygon ditched the deal with Sugon citing major changes in market conditions and the complexity of the merger",
+            "url": "https://www.caixinglobal.com/2025-12-10/chinese-chip-heavyweight-abandons-acquisition-of-server-firm-102391864.html",
+            "image": "https://file.caixin.com/en/web/img/caixin-share.png",
+            "published_at": "2025-12-10T00:00:00Z",
+            "source_name": "Caixin",
+            "sentiment_score": -0.836
+          },
+          {
+            "title": "The Abandons Ending Explained: Who Survives the Fire?",
+            "description": "'The Abandons' starring Lena Headey and Gillian Anderson premiered Dec. 4 on Netflix. After seven episodes, it left off on a cliffhanger. Here's what happened at the end of 'The Abandons.'",
+            "url": "https://people.com/the-abandons-ending-explained-11864366",
+            "image": "https://people.com/thmb/HIjzvdkWTELKuaELY_7-S-sTwro=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/the-abandons5-12825-7ca259d1f7ee47a5835490baed2b4353.jpg",
+            "published_at": "2025-12-09T22:00:00Z",
+            "source_name": "People.com",
+            "sentiment_score": -0.908
+          }
+        ]
+      },
+      "tmdb": {
+        "name": "The Abandons",
+        "found": true,
+        "tmdb_score": 62.4,
+        "vote_average": 5.8,
+        "vote_count": 43,
+        "popularity": 93,
+        "trending_rank": 6,
+        "first_air_date": "2025-12-04"
+      },
+      "wikipedia": {
+        "article_title": "The_Abandons",
+        "project": "en.wikipedia",
+        "access": "all-access",
+        "agent": "all-agents",
+        "granularity": "daily",
+        "start_date": "2025-12-03",
+        "end_date": "2025-12-10",
+        "count": 7,
+        "points": [
+          {
+            "date": "20251203",
+            "views": 5890
+          },
+          {
+            "date": "20251204",
+            "views": 56280
+          },
+          {
+            "date": "20251205",
+            "views": 79601
+          },
+          {
+            "date": "20251206",
+            "views": 83812
+          },
+          {
+            "date": "20251207",
+            "views": 82993
+          },
+          {
+            "date": "20251208",
+            "views": 66520
+          },
+          {
+            "date": "20251209",
+            "views": 55278
+          }
+        ],
+        "raw": {
+          "items": [
+            {
+              "project": "en.wikipedia",
+              "article": "The_Abandons",
+              "granularity": "daily",
+              "timestamp": "2025120300",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 5890
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "The_Abandons",
+              "granularity": "daily",
+              "timestamp": "2025120400",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 56280
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "The_Abandons",
+              "granularity": "daily",
+              "timestamp": "2025120500",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 79601
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "The_Abandons",
+              "granularity": "daily",
+              "timestamp": "2025120600",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 83812
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "The_Abandons",
+              "granularity": "daily",
+              "timestamp": "2025120700",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 82993
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "The_Abandons",
+              "granularity": "daily",
+              "timestamp": "2025120800",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 66520
+            },
+            {
+              "project": "en.wikipedia",
+              "article": "The_Abandons",
+              "granularity": "daily",
+              "timestamp": "2025120900",
+              "access": "all-access",
+              "agent": "all-agents",
+              "views": 55278
+            }
+          ]
+        },
+        "total_weekly_views": 430374,
+        "avg_daily_views": 61482,
+        "score": 26.5
+      }
+    },
+    {
+      "show_name": "Man Vs Baby",
+      "final_composite_score": 27.7,
+      "fair_price": 14.0,
+      "recommendation": "HOLD",
+      "edge_points": 0.0,
+      "kalshi": {
+        "can_close_early": true,
+        "category": "",
+        "close_time": "2025-12-16T04:59:00Z",
+        "created_time": "2025-12-10T18:10:35.515857Z",
+        "custom_strike": {
+          "Show/Movie": "Man Vs Baby: Season 1"
+        },
+        "early_close_condition": "The Netflix charts are updated on Tuesday. Therefore, the market will close at 11:59 PM ET the day before.",
+        "event_ticker": "KXNETFLIXRANKSHOW-25DEC15",
+        "expected_expiration_time": "2025-12-16T15:00:00Z",
+        "expiration_time": "2025-12-22T15:00:00Z",
+        "expiration_value": "",
+        "last_price": 4,
+        "last_price_dollars": "0.0400",
+        "latest_expiration_time": "2025-12-22T15:00:00Z",
+        "liquidity": 266313,
+        "liquidity_dollars": "2663.1300",
+        "market_type": "binary",
+        "no_ask": 96,
+        "no_ask_dollars": "0.9600",
+        "no_bid": 43,
+        "no_bid_dollars": "0.4300",
+        "no_sub_title": "Man Vs Baby: Season 1",
+        "notional_value": 100,
+        "notional_value_dollars": "1.0000",
+        "open_interest": 385,
+        "open_time": "2025-12-10T18:51:15Z",
+        "previous_price": 0,
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask": 0,
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid": 0,
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "linear_cent",
+        "price_ranges": [
+          {
+            "end": "1.0000",
+            "start": "0.0000",
+            "step": "0.0100"
+          }
+        ],
+        "response_price_units": "usd_cent",
+        "result": "",
+        "risk_limit_cents": 0,
+        "rules_primary": "If Man Vs Baby: Season 1 is #1 on the Netflix Top 10 Shows in the United States on the chart published on Dec 16, 2025, then the market resolves to Yes.",
+        "rules_secondary": "The Netflix charts are updated on Tuesday. Therefore, the market will close at 11:59 PM ET the day before. The chart published on Dec 16, 2025 will be for the week ending the previous Sunday.",
+        "settlement_timer_seconds": 3600,
+        "status": "active",
+        "strike_type": "custom",
+        "subtitle": "Man Vs Baby: Season 1",
+        "tick_size": 1,
+        "ticker": "KXNETFLIXRANKSHOW-25DEC15-MAN",
+        "title": "Top Netflix show on Dec 15, 2025?",
+        "volume": 385,
+        "volume_24h": 85,
+        "yes_ask": 57,
+        "yes_ask_dollars": "0.5700",
+        "yes_bid": 4,
+        "yes_bid_dollars": "0.0400",
+        "yes_sub_title": "Man Vs Baby: Season 1"
+      },
+      "youtube": {
+        "show_name": "Man Vs Baby",
+        "videos": [
+          {
+            "video_id": "zHhR3daI3bY",
+            "title": "Man Vs Baby | Official Trailer | Netflix",
+            "view_count": 9469171,
+            "like_count": 248427,
+            "comment_count": 8913,
+            "sentiment_score": 0.3599
+          },
+          {
+            "video_id": "XW9FLJwN_j8",
+            "title": "Man Vs Baby | First Trailer | Mr Bean | Netflix",
+            "view_count": 875,
+            "like_count": 14,
+            "comment_count": 0,
+            "sentiment_score": 0.0
+          },
+          {
+            "video_id": "HcSwTFyE6M4",
+            "title": "Man Vs Baby - First Trailer | Rowan Atkinson | Netflix (2026)",
+            "view_count": 5467,
+            "like_count": 41,
+            "comment_count": 1,
+            "sentiment_score": 0.0
+          },
+          {
+            "video_id": "enuQxUWTiP4",
+            "title": "Man vs Baby (2025) – First Trailer | Rowan Atkinson",
+            "view_count": 55832,
+            "like_count": 237,
+            "comment_count": 31,
+            "sentiment_score": 0.0281
+          },
+          {
+            "video_id": "eDxRMaCRYbA",
+            "title": "MAN VS BABY Official Trailer (2025) Rowan Atkinson, Netflix",
+            "view_count": 27635,
+            "like_count": 504,
+            "comment_count": 26,
+            "sentiment_score": 0.3991
+          },
+          {
+            "video_id": "Vi90jbJ6YV0",
+            "title": "Man vs Baby (2025) – First Trailer | Rowan Atkinson | Concept",
+            "view_count": 35199,
+            "like_count": 191,
+            "comment_count": 19,
+            "sentiment_score": 0.093
+          },
+          {
+            "video_id": "hBIzM-1Rd9o",
+            "title": "Man Vs Baby | Official Trailer | Netflix",
+            "view_count": 185222,
+            "like_count": 2406,
+            "comment_count": 55,
+            "sentiment_score": 0.3925
+          },
+          {
+            "video_id": "zJyYuM9SL2o",
+            "title": "Man vs Baby Full Movie (2025) Mr Bean Ultimate Comedy Adventure Movie Review & Facts",
+            "view_count": 5963,
+            "like_count": 28,
+            "comment_count": 0,
+            "sentiment_score": 0.0
+          },
+          {
+            "video_id": "cUUyjGal_yk",
+            "title": "Man vs Baby (2025) – Teaser Trailer | Rowan Atkinson | Concept",
+            "view_count": 1602,
+            "like_count": 24,
+            "comment_count": 1,
+            "sentiment_score": 0.9217
+          },
+          {
+            "video_id": "YQ1vN_91KO0",
+            "title": "Man Vs Bee | Official Trailer | Netflix",
+            "view_count": 16690450,
+            "like_count": 491338,
+            "comment_count": 27177,
+            "sentiment_score": 0.4389
+          }
+        ],
+        "totals": {
+          "total_views": 26477416,
+          "total_likes": 743210,
+          "average_views": 2647741,
+          "average_likes": 74321,
+          "like_percentage": 2.81,
+          "sentiment_average": 0.2633,
+          "youtube_score": 73.2
+        }
+      },
+      "news": {
+        "show_name": "Man Vs Baby",
+        "news_score": 69.0,
+        "sentiment_score": 0.63,
+        "article_count": 10,
+        "top_articles": [
+          {
+            "title": "New OTT releases this week: From 'Single Papa' to 'The West Wing', full list of Netflix shows you can binge watch this December",
+            "description": "New OTT releases movies: Netflix is reportedly set to acquire Warner Bros for $82.7 billion, gaining control of major franchises. Meanwhile, Paramount Skydance has launched a competing $108.4 billion bid for Warner Bros Discovery, creating uncertainty. December also brings new Netflix releases like 'Single Papa,' 'Man Vs. Baby,' and 'Wake Up Dead Man: A Knives Out Mystery.'",
+            "url": "https://economictimes.indiatimes.com/news/new-updates/new-ott-releases-this-week-from-single-papa-to-the-west-wing-full-list-of-netflix-shows-you-can-binge-this-december/articleshow/125862239.cms",
+            "image": "https://img.etimg.com/thumb/msid-125862336,width-1200,height-630,imgsize-2369847,overlay-economictimes/articleshow.jpg",
+            "published_at": "2025-12-09T05:32:00Z",
+            "source_name": "The Economic Times",
+            "sentiment_score": 0.7003
+          },
+          {
+            "title": "New OTT releases this week: New movies, web series to watch; Kaantha, Superman, Man vs Baby, Single Papa and more",
+            "description": "OTT releases this week: A number of new movies and web series will be available this weekend on OTT platforms like ZEE5, Apple TV, JioHotstar, Amazon Prime Video, Netflix and SonyLIV. Check out.",
+            "url": "https://www.livemint.com/entertainment/new-ott-releases-this-week-new-movies-web-series-to-watch-kaantha-superman-man-vs-baby-single-papa-and-more-11765252341374.html",
+            "image": "https://www.livemint.com/lm-img/img/2025/12/09/1600x900/logo/9_Dec_OTT_1765254602602_1765254637807.png",
+            "published_at": "2025-12-09T04:35:04Z",
+            "source_name": "Livemint",
+            "sentiment_score": 0.7906
+          }
+        ]
+      },
+      "tmdb": {
+        "name": "Man Vs Baby",
+        "found": true,
+        "tmdb_score": 6.1,
+        "vote_average": 0.0,
+        "vote_count": 0,
+        "popularity": 10,
+        "trending_rank": null,
+        "first_air_date": "2025-12-11"
+      },
+      "wikipedia": {
+        "points": [],
+        "avg_daily_views": 0,
+        "total_weekly_views": 0,
+        "score": 0.0
+      }
+    }
+  ]
+}

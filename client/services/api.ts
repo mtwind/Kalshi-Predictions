@@ -1,5 +1,8 @@
 // client/services/api.ts
-const API_BASE = "http://localhost:8000"; // Ensure this matches your FastAPI port
+
+// Use the env var if available, otherwise fallback to localhost
+const API_BASE =
+  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
 
 // --- AGGREGATOR (Master Data Source) ---
 export const fetchLatestAnalysis = async () => {

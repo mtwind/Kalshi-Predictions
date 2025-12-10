@@ -1,3 +1,8 @@
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -11,12 +16,16 @@ from aggregator.routes import router as aggregator_router
 
 app = FastAPI(title="Data Aggregation Backend")
 
+FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:3000")
+
 # ------------------------------------------------------------
 # CORS Configuration (Fixes the frontend access error)
 # ------------------------------------------------------------
 origins = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
+    "http://localhost:3000",                  # For local development
+    "https://kalshipredictions.site",         # <--- YOUR VERCEL DOMAIN
+    "https://www.kalshipredictions.site",     # <--- GOOD TO INCLUDE WWW TOO
+    os.getenv("FRONTEND_URL", ""),            # Dynamic env var from Render
 ]
 
 app.add_middleware(
