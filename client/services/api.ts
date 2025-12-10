@@ -1,6 +1,23 @@
 // client/services/api.ts
 const API_BASE = "http://localhost:8000"; // Ensure this matches your FastAPI port
 
+// --- AGGREGATOR (Master Data Source) ---
+export const fetchLatestAnalysis = async () => {
+  const res = await fetch(`${API_BASE}/aggregator/latest`, {
+    cache: "no-store", // Ensure we don't get stale browser cache
+  });
+  if (!res.ok) throw new Error("Failed to fetch analysis");
+  return res.json();
+};
+
+export const refreshAnalysis = async () => {
+  const res = await fetch(`${API_BASE}/aggregator/refresh`, {
+    method: "POST",
+  });
+  if (!res.ok) throw new Error("Failed to refresh analysis");
+  return res.json();
+};
+
 // --- KALSHI ---
 export const fetchKalshiTop = async (limit = 5) => {
   const res = await fetch(`${API_BASE}/kalshi/netflix/top?limit=${limit}`);
