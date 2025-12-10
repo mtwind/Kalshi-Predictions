@@ -15,6 +15,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import Grid from "@mui/material/Grid";
 
+import NewsCard from "@/components/sections/NewsCard";
 import KalshiCard from "../components/sections/KalshiCard";
 import TmdbCard from "../components/sections/TmdbCard";
 import WikipediaCard from "../components/sections/WikipediaCard";
@@ -72,9 +73,9 @@ export default function Dashboard() {
           </Grid>
 
           {/* Row 3: News */}
-          {/* <Grid size={{ xs: 12 }}>
+          <Grid size={{ xs: 12 }}>
             <NewsCard refreshTrigger={refreshTrigger} />
-          </Grid> */}
+          </Grid>
         </Grid>
       </Container>
     </Box>

@@ -116,9 +116,27 @@ export const fetchGoogleNews = async (
       query: query,
       from_date: fromDate,
       to_date: toDate,
-      max_results: 100, // Request maximum articles for better sample size
+      max_results: 100,
       sort_by: "publishedAt",
     }),
   });
+  if (!res.ok) throw new Error("Failed to fetch news search");
+  return res.json();
+};
+
+// FIX: Add Error Checking
+export const fetchNewsAnalysis = async (showName: string) => {
+  const res = await fetch(`${API_BASE}/google-news/analysis`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ show_name: showName }),
+  });
+
+  if (!res.ok) {
+    // Attempt to read the error text for debugging
+    const errText = await res.text();
+    throw new Error(`API Error ${res.status}: ${errText}`);
+  }
+
   return res.json();
 };

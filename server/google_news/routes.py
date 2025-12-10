@@ -2,39 +2,24 @@
 from __future__ import annotations
 
 from typing import Optional
-
 from fastapi import APIRouter
 from pydantic import BaseModel, Field
 
-from .news_service import search_news
+from .news_service import search_news, get_news_analysis
 
 router = APIRouter()
 
 
 class NewsSearchRequest(BaseModel):
-    query: str = Field(..., description="Search query, e.g. 'Stranger Things Netflix'")
-    from_date: Optional[str] = Field(
-        default=None,
-        description="Optional start date 'YYYY-MM-DD'",
-    )
-    to_date: Optional[str] = Field(
-        default=None,
-        description="Optional end date 'YYYY-MM-DD'",
-    )
-    language: str = Field(
-        "en",
-        description="2-letter language code, default 'en'",
-    )
-    max_results: int = Field(
-        20,
-        ge=1,
-        le=100,
-        description="Maximum number of articles (default 20 for better sampling)",
-    )
-    sort_by: str = Field(
-        "relevance",
-        description="publishedAt | relevance | popularity",
-    )
+    query: str = Field(..., description="Search query")
+    from_date: Optional[str] = Field(None)
+    to_date: Optional[str] = Field(None)
+    language: str = Field("en")
+    max_results: int = Field(20, ge=1, le=100)
+    sort_by: str = Field("publishedAt")
+
+class AnalysisRequest(BaseModel):
+    show_name: str = Field(..., description="Show name to analyze")
 
 
 @router.post("/search")
@@ -47,3 +32,10 @@ def google_news_search(req: NewsSearchRequest):
         max_results=req.max_results,
         sort_by=req.sort_by,
     )
+
+@router.post("/analysis")
+def google_news_analysis(req: AnalysisRequest):
+    """
+    Get a calculated News Score and aggregated metrics.
+    """
+    return get_news_analysis(req.show_name)

@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -17,7 +18,6 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 GNEWS_API_KEY = os.getenv("GNEWS_API_KEY")
 GNEWS_BASE_URL = "https://gnews.io/api/v4"
 
-# Initialize VADER
 _analyzer = SentimentIntensityAnalyzer()
 
 def _require_api_key() -> str:
@@ -42,19 +42,15 @@ def _save_payload(prefix: str, payload: dict) -> str:
     return str(path)
 
 
-def _get(path: str, params: Dict) -> Dict:
-    api_key = _require_api_key()
-    url = f"{GNEWS_BASE_URL}{path}"
-    params = dict(params)
-    params["apikey"] = api_key
-
-    r = requests.get(url, params=params, timeout=10)
-    try:
-        r.raise_for_status()
-    except requests.HTTPError:
-        raise HTTPException(status_code=r.status_code, detail=r.text)
-
-    return r.json()
+def _clean_query(text: str) -> str:
+    """
+    Remove special characters that cause syntax errors in GNews (like colons).
+    Replaces them with a space.
+    Example: "Sean Combs: The Reckoning" -> "Sean Combs  The Reckoning"
+    """
+    # Keep alphanumeric, spaces, hyphens, and apostrophes. 
+    # Remove everything else (including colons, parens, quotes).
+    return re.sub(r"[^a-zA-Z0-9\s\-\']", " ", text).strip()
 
 
 def search_news(
@@ -62,72 +58,101 @@ def search_news(
     from_date: Optional[str] = None,
     to_date: Optional[str] = None,
     language: str = "en",
-    max_results: int = 100, # Increased default to 100
-    sort_by: str = "relevance",
+    max_results: int = 20,
+    sort_by: str = "publishedAt",
 ) -> Dict:
-    """
-    Search news articles using GNews.
-    Includes robust sentiment analysis using Title + Description + Content.
-    """
-    params: Dict = {
+    api_key = _require_api_key()
+
+    params = {
         "q": query,
+        "apikey": api_key,
         "lang": language,
         "max": max_results,
         "sortby": sort_by,
     }
     if from_date:
-        params["from"] = from_date
+        params["from"] = f"{from_date}T00:00:00Z"
     if to_date:
-        params["to"] = to_date
+        params["to"] = f"{to_date}T23:59:59Z"
 
-    data = _get("/search", params=params)
+    r = requests.get(f"{GNEWS_BASE_URL}/search", params=params, timeout=10)
+    try:
+        r.raise_for_status()
+    except requests.HTTPError:
+        # Pass the upstream error detail so we know why it failed
+        raise HTTPException(status_code=r.status_code, detail=f"GNews API Error: {r.text}")
 
-    articles_raw: List[Dict] = data.get("articles", [])
-    articles: List[Dict] = []
+    data = r.json()
+    articles = []
     
-    for a in articles_raw:
+    for a in data.get("articles", []):
         source = a.get("source") or {}
         title = a.get("title") or ""
         desc = a.get("description") or ""
         content = a.get("content") or ""
         
-        # Combine all text for better sentiment context
+        # Combine text for better sentiment context
         text_to_analyze = f"{title}. {desc}. {content}"
         
-        # Get sentiment compound score (-1.0 to 1.0)
         sentiment_score = _analyzer.polarity_scores(text_to_analyze)["compound"]
 
         articles.append(
             {
                 "title": title,
                 "description": desc,
-                "content": content,
                 "url": a.get("url"),
                 "image": a.get("image"),
                 "published_at": a.get("publishedAt"),
                 "source_name": source.get("name"),
-                "source_url": source.get("url"),
                 "sentiment_score": sentiment_score
             }
         )
 
-    # Calculate average sentiment for the search topic
     avg_sentiment = 0.0
     if articles:
         avg_sentiment = sum(a["sentiment_score"] for a in articles) / len(articles)
 
-    payload: Dict = {
+    payload = {
         "query": query,
-        "from_date": from_date,
-        "to_date": to_date,
-        "language": language,
-        "max_results": max_results,
-        "sort_by": sort_by,
-        "count": len(articles),
-        "average_sentiment": round(avg_sentiment, 4),
+        "count": data.get("totalArticles", len(articles)),
         "articles": articles,
-        "raw": data,
+        "avg_sentiment": avg_sentiment,
     }
 
     _save_payload(f"news-{_slugify(query)}", payload)
+    return payload
+
+
+def get_news_analysis(show_name: str) -> Dict:
+    """
+    Orchestrates a news analysis to generate a 'News Score'.
+    """
+    
+    # FIX: Clean the show name to remove colons/syntax errors
+    safe_query = _clean_query(show_name)
+    
+    # 1. Search recent news using the safe query
+    news_data = search_news(query=safe_query, max_results=20, sort_by="publishedAt")
+    articles = news_data.get("articles", [])
+    count = len(articles)
+    avg_sentiment = news_data.get("avg_sentiment", 0.0)
+    
+    # 2. Calculate Score
+    # Sentiment (-1 to 1) -> normalized 0-60 points
+    sentiment_points = ((avg_sentiment + 1) / 2) * 60
+    
+    # Volume -> 0-40 points
+    volume_points = (min(count, 20) / 20) * 40
+    
+    final_score = round(sentiment_points + volume_points, 1)
+    
+    payload = {
+        "show_name": show_name, # Return original name for UI consistency
+        "news_score": final_score,
+        "sentiment_score": round(avg_sentiment, 2),
+        "article_count": count,
+        "top_articles": articles[:2] 
+    }
+    
+    _save_payload(f"analysis-{_slugify(show_name)}", payload)
     return payload

@@ -1,33 +1,40 @@
+// client/components/sections/NewsCard.tsx
 "use client";
 
+import ArticleIcon from "@mui/icons-material/Article";
 import NewspaperIcon from "@mui/icons-material/Newspaper";
 import RefreshIcon from "@mui/icons-material/Refresh";
-import SentimentDissatisfiedIcon from "@mui/icons-material/SentimentDissatisfied";
-import SentimentNeutralIcon from "@mui/icons-material/SentimentNeutral";
-import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt";
+import ScoreIcon from "@mui/icons-material/Score";
 import {
   Box,
   Card,
   CardContent,
   CardHeader,
   Chip,
+  CircularProgress,
   Divider,
   IconButton,
   LinearProgress,
   List,
   ListItem,
-  Tooltip,
+  Stack,
   Typography,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
 
-import { fetchGoogleNews, fetchKalshiTop } from "../../services/api";
-import { formatDate, normalizeShowName } from "../../utils/formatters";
+import { fetchKalshiTop, fetchNewsAnalysis } from "../../services/api";
+import { normalizeShowName } from "../../utils/formatters";
 
-interface ShowSentiment {
-  name: string;
-  score: number;
-  articleCount: number;
+interface NewsMetrics {
+  show_name: string;
+  news_score: number;
+  sentiment_score: number;
+  article_count: number;
+  top_articles: {
+    title: string;
+    url: string;
+    source_name: string;
+  }[];
 }
 
 interface Props {
@@ -37,16 +44,16 @@ interface Props {
 export default function NewsCard({ refreshTrigger }: Props) {
   const [loading, setLoading] = useState(false);
   const [loadingStatus, setLoadingStatus] = useState("Initializing...");
-  const [data, setData] = useState<ShowSentiment[]>([]);
+  const [data, setData] = useState<NewsMetrics[]>([]);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    analyzeSentiment();
+    loadData();
   }, [refreshTrigger]);
 
-  const analyzeSentiment = async () => {
+  const loadData = async () => {
     setLoading(true);
-    setLoadingStatus("Fetching top markets...");
+    setLoadingStatus("Checking news outlets...");
     setError(null);
     setData([]);
 
@@ -56,93 +63,60 @@ export default function NewsCard({ refreshTrigger }: Props) {
 
       const uniqueShows = new Set<string>();
       kalshiData.markets.forEach((m: any) => {
-        const rawName = m.subtitle || m.title || "";
-        const cleanName = normalizeShowName(rawName);
+        const cleanName = normalizeShowName(m.subtitle || m.title || "");
         if (cleanName) uniqueShows.add(cleanName);
       });
 
       const shows = Array.from(uniqueShows);
-      const results: ShowSentiment[] = [];
-
-      // UPDATED: Extended window to 30 days for more results
-      const end = new Date();
-      const start = new Date();
-      start.setDate(end.getDate() - 30);
-      const fromDate = formatDate(start);
-      const toDate = formatDate(end);
+      const results: NewsMetrics[] = [];
 
       for (let i = 0; i < shows.length; i++) {
         const show = shows[i];
         setLoadingStatus(
-          `Analyzing sentiment for ${show} (${i + 1}/${shows.length})...`
+          `Reading headlines for ${show} (${i + 1}/${shows.length})...`
         );
 
         try {
-          // UPDATED: Removed "Netflix" to broaden search results
-          // We rely on the show name being unique enough (e.g. "Stranger Things")
-          const query = `"${show}"`;
-          const res = await fetchGoogleNews(query, fromDate, toDate);
-
-          results.push({
-            name: show,
-            score: res.average_sentiment || 0,
-            articleCount: res.count || 0,
-          });
+          const analysis = await fetchNewsAnalysis(show);
+          // Check that we actually got a valid analysis object back
+          if (analysis && typeof analysis.news_score === "number") {
+            results.push(analysis);
+          }
         } catch (e) {
-          console.warn(`Failed to analyze news for ${show}`, e);
+          console.warn(`Failed News analysis for ${show}`, e);
         }
       }
 
-      results.sort((a, b) => b.score - a.score);
+      results.sort((a, b) => b.news_score - a.news_score);
       setData(results);
     } catch (err) {
-      console.error("News analysis failed", err);
-      setError("Failed to analyze sentiment");
+      console.error(err);
+      setError("Failed to load News metrics");
     } finally {
       setLoading(false);
     }
   };
 
-  const getSentimentInfo = (score: number) => {
-    if (score >= 0.05)
-      return {
-        color: "success.main",
-        label: "Positive",
-        Icon: SentimentSatisfiedAltIcon,
-      };
-    if (score <= -0.05)
-      return {
-        color: "error.main",
-        label: "Negative",
-        Icon: SentimentDissatisfiedIcon,
-      };
-    return {
-      color: "text.secondary",
-      label: "Neutral",
-      Icon: SentimentNeutralIcon,
-    };
+  const getSentimentColor = (score: number) => {
+    if (score > 0.1) return "success.main";
+    if (score < -0.1) return "error.main";
+    return "text.secondary";
   };
-
-  const normalizeScoreToPercent = (score: number) => ((score + 1) / 2) * 100;
 
   return (
     <Card sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
       <CardHeader
         avatar={<NewspaperIcon color="primary" />}
         title="News Sentiment"
-        subheader="Analysis (Last 30 Days)"
+        subheader="Media Coverage & Scoring"
         action={
-          <IconButton
-            onClick={analyzeSentiment}
-            disabled={loading}
-            size="small"
-          >
+          <IconButton onClick={loadData} disabled={loading} size="small">
             <RefreshIcon fontSize="small" />
           </IconButton>
         }
       />
       <Divider />
-      <CardContent sx={{ flexGrow: 1, overflowY: "auto" }}>
+      <CardContent sx={{ flexGrow: 1, overflowY: "auto", p: 0 }}>
         {loading ? (
           <Box
             display="flex"
@@ -151,10 +125,9 @@ export default function NewsCard({ refreshTrigger }: Props) {
             alignItems="center"
             height={200}
             gap={2}
-            p={3}
           >
-            <LinearProgress sx={{ width: "100%", mb: 1 }} />
-            <Typography variant="body2" color="text.secondary" align="center">
+            <CircularProgress size={30} />
+            <Typography variant="caption" color="text.secondary">
               {loadingStatus}
             </Typography>
           </Box>
@@ -164,91 +137,103 @@ export default function NewsCard({ refreshTrigger }: Props) {
               {error}
             </Typography>
           </Box>
-        ) : data.length === 0 ? (
-          <Box p={3} textAlign="center">
-            <Typography variant="body2" color="text.secondary">
-              No news data available.
-            </Typography>
-          </Box>
         ) : (
           <List disablePadding>
-            {data.map((item, index) => {
-              const { color, label, Icon } = getSentimentInfo(item.score);
-              return (
-                <React.Fragment key={item.name}>
-                  <ListItem sx={{ display: "block", py: 1.5 }}>
-                    <Box
-                      display="flex"
-                      justifyContent="space-between"
-                      alignItems="center"
-                      mb={1}
-                    >
-                      <Typography variant="subtitle2" fontWeight="bold">
-                        {item.name}
-                      </Typography>
+            {data.map((item, index) => (
+              <React.Fragment key={item.show_name}>
+                <ListItem sx={{ display: "block", py: 2 }}>
+                  <Box
+                    display="flex"
+                    justifyContent="space-between"
+                    alignItems="center"
+                    mb={1.5}
+                  >
+                    <Typography variant="subtitle2" fontWeight="bold">
+                      {item.show_name}
+                    </Typography>
+                    <Chip
+                      icon={<ScoreIcon />}
+                      label={`Score: ${item.news_score}`}
+                      size="small"
+                      color={item.news_score > 60 ? "success" : "primary"}
+                      variant="filled"
+                    />
+                  </Box>
 
-                      <Tooltip title={`${label} (${item.score.toFixed(3)})`}>
-                        <Chip
-                          icon={<Icon style={{ fontSize: 16 }} />}
-                          label={
-                            item.score > 0
-                              ? `+${item.score.toFixed(2)}`
-                              : item.score.toFixed(2)
-                          }
-                          size="small"
-                          variant="outlined"
-                          sx={{
-                            color: color,
-                            borderColor: color,
-                            fontWeight: "bold",
-                            height: 24,
-                          }}
-                        />
-                      </Tooltip>
-                    </Box>
-
-                    <Box display="flex" alignItems="center" gap={1}>
-                      <Typography
-                        variant="caption"
-                        color="error.main"
-                        fontWeight="bold"
-                      >
-                        -1
+                  {/* Sentiment Bar */}
+                  <Box mb={1}>
+                    <Box display="flex" justifyContent="space-between" mb={0.5}>
+                      <Typography variant="caption" color="text.secondary">
+                        Negative
                       </Typography>
-                      <LinearProgress
-                        variant="determinate"
-                        value={normalizeScoreToPercent(item.score)}
-                        sx={{
-                          flexGrow: 1,
-                          height: 8,
-                          borderRadius: 1,
-                          bgcolor: "#f0f0f0",
-                          "& .MuiLinearProgress-bar": {
-                            bgcolor: color,
-                          },
-                        }}
-                      />
-                      <Typography
-                        variant="caption"
-                        color="success.main"
-                        fontWeight="bold"
-                      >
-                        +1
+                      <Typography variant="caption" color="text.secondary">
+                        Positive
                       </Typography>
                     </Box>
-
+                    <LinearProgress
+                      variant="determinate"
+                      value={((item.sentiment_score + 1) / 2) * 100}
+                      sx={{
+                        height: 6,
+                        borderRadius: 3,
+                        bgcolor: "#ffebee",
+                        "& .MuiLinearProgress-bar": {
+                          bgcolor: getSentimentColor(item.sentiment_score),
+                        },
+                      }}
+                    />
                     <Typography
                       variant="caption"
-                      color="text.secondary"
-                      sx={{ mt: 0.5, display: "block", textAlign: "right" }}
+                      display="block"
+                      textAlign="center"
+                      mt={0.5}
+                      fontWeight="bold"
+                      color={getSentimentColor(item.sentiment_score)}
                     >
-                      Based on {item.articleCount} articles
+                      {item.sentiment_score > 0 ? "+" : ""}
+                      {item.sentiment_score} Sentiment
                     </Typography>
-                  </ListItem>
-                  {index < data.length - 1 && <Divider />}
-                </React.Fragment>
-              );
-            })}
+                  </Box>
+
+                  {/* Top Headline & Volume */}
+                  <Stack
+                    direction="row"
+                    alignItems="center"
+                    justifyContent="space-between"
+                    mt={2}
+                  >
+                    <Box display="flex" alignItems="center" gap={0.5}>
+                      <ArticleIcon fontSize="small" color="action" />
+                      <Typography variant="caption" color="text.secondary">
+                        {item.article_count} recent articles
+                      </Typography>
+                    </Box>
+                  </Stack>
+
+                  {/* FIX: Safe access using optional chaining */}
+                  {item.top_articles && item.top_articles.length > 0 && (
+                    <Box mt={1} p={1} bgcolor="#f5f5f5" borderRadius={1}>
+                      <Typography
+                        variant="caption"
+                        fontStyle="italic"
+                        color="text.primary"
+                      >
+                        "{item.top_articles[0].title}"
+                      </Typography>
+                      <Typography
+                        variant="caption"
+                        display="block"
+                        color="text.secondary"
+                        fontSize="0.7rem"
+                      >
+                        — {item.top_articles[0].source_name}
+                      </Typography>
+                    </Box>
+                  )}
+                </ListItem>
+                {index < data.length - 1 && <Divider component="li" />}
+              </React.Fragment>
+            ))}
           </List>
         )}
       </CardContent>
