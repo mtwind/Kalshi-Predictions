@@ -1,7 +1,6 @@
 // client/components/sections/NewsCard.tsx
 "use client";
 
-import ArticleIcon from "@mui/icons-material/Article";
 import NewspaperIcon from "@mui/icons-material/Newspaper";
 import ScoreIcon from "@mui/icons-material/Score";
 import {
@@ -14,7 +13,6 @@ import {
   LinearProgress,
   List,
   ListItem,
-  Stack,
   Typography,
 } from "@mui/material";
 import React from "react";
@@ -109,7 +107,7 @@ export default function NewsCard({ shows }: Props) {
                   </Box>
 
                   {/* Top Headline & Volume */}
-                  <Stack
+                  {/* <Stack
                     direction="row"
                     alignItems="center"
                     justifyContent="space-between"
@@ -121,9 +119,9 @@ export default function NewsCard({ shows }: Props) {
                         {n.article_count ?? 0} recent articles
                       </Typography>
                     </Box>
-                  </Stack>
+                  </Stack> */}
 
-                  {n.top_articles && n.top_articles.length > 0 && (
+                  {/* {n.top_articles && n.top_articles.length > 0 && (
                     <Box mt={1} p={1} bgcolor="#f5f5f5" borderRadius={1}>
                       <Typography
                         variant="caption"
@@ -133,7 +131,7 @@ export default function NewsCard({ shows }: Props) {
                         "{n.top_articles[0].title}"
                       </Typography>
                     </Box>
-                  )}
+                  )} */}
                 </ListItem>
                 {index < validShows.length - 1 && <Divider component="li" />}
               </React.Fragment>
