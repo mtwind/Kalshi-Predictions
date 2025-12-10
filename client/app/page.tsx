@@ -11,13 +11,10 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 // Import Grid2 (the new standard in MUI v6)
+import NewsCard from "@/components/sections/NewsCard";
 import MenuIcon from "@mui/icons-material/Menu";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import Grid from "@mui/material/Grid";
-
-import YoutubeCard from "@/components/sections/YoutubeCard";
-import KalshiCard from "../components/sections/KalshiCard";
-import WikipediaCard from "../components/sections/WikipediaCard";
 
 export default function Dashboard() {
   const [refreshTrigger, setRefreshTrigger] = useState(0);
@@ -52,28 +49,28 @@ export default function Dashboard() {
         {/* Grid v2 Container */}
         <Grid container spacing={3}>
           {/* Row 1: High Priority */}
-          <Grid size={{ xs: 12, md: 6, lg: 4 }}>
+          {/* <Grid size={{ xs: 12, md: 6, lg: 4 }}>
             <KalshiCard refreshTrigger={refreshTrigger} />
-          </Grid>
+          </Grid> */}
           {/* <Grid size={{ xs: 12, md: 6, lg: 4 }}>
             <TrendsCard refreshTrigger={refreshTrigger} />
           </Grid> */}
-          <Grid size={{ xs: 12, md: 12, lg: 4 }}>
+          {/* <Grid size={{ xs: 12, md: 12, lg: 4 }}>
             <WikipediaCard refreshTrigger={refreshTrigger} />
-          </Grid>
+          </Grid> */}
 
           {/* Row 2: Media */}
-          <Grid size={{ xs: 12, md: 6 }}>
+          {/* <Grid size={{ xs: 12, md: 6 }}>
             <YoutubeCard refreshTrigger={refreshTrigger} />
-          </Grid>
+          </Grid> */}
           {/* <Grid size={{ xs: 12, md: 6 }}>
             <TmdbCard refreshTrigger={refreshTrigger} />
           </Grid> */}
 
           {/* Row 3: News */}
-          {/* <Grid size={{ xs: 12 }}>
+          <Grid size={{ xs: 12 }}>
             <NewsCard refreshTrigger={refreshTrigger} />
-          </Grid> */}
+          </Grid>
         </Grid>
       </Container>
     </Box>

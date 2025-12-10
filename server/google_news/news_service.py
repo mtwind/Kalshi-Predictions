@@ -50,7 +50,7 @@ def _clean_query(text: str) -> str:
     """
     # Keep alphanumeric, spaces, hyphens, and apostrophes. 
     # Remove everything else (including colons, parens, quotes).
-    return re.sub(r"[^a-zA-Z0-9\s\-\']", " ", text).strip()
+    return re.sub(r"[^a-zA-Z0-9\s\-\']", "", text).strip()
 
 
 def search_news(
@@ -130,6 +130,7 @@ def get_news_analysis(show_name: str) -> Dict:
     
     # FIX: Clean the show name to remove colons/syntax errors
     safe_query = _clean_query(show_name)
+    print(f"safe_query: {safe_query}, show_name: {show_name}")
     
     # 1. Search recent news using the safe query
     news_data = search_news(query=safe_query, max_results=20, sort_by="publishedAt")
