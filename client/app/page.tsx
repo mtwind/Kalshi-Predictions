@@ -15,11 +15,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import Grid from "@mui/material/Grid";
 
-import NewsCard from "@/components/sections/NewsCard";
+import YoutubeCard from "@/components/sections/YoutubeCard";
 import KalshiCard from "../components/sections/KalshiCard";
-import TmdbCard from "../components/sections/TmdbCard";
 import WikipediaCard from "../components/sections/WikipediaCard";
-import YoutubeCard from "../components/sections/YoutubeCard";
 
 export default function Dashboard() {
   const [refreshTrigger, setRefreshTrigger] = useState(0);
@@ -68,14 +66,14 @@ export default function Dashboard() {
           <Grid size={{ xs: 12, md: 6 }}>
             <YoutubeCard refreshTrigger={refreshTrigger} />
           </Grid>
-          <Grid size={{ xs: 12, md: 6 }}>
+          {/* <Grid size={{ xs: 12, md: 6 }}>
             <TmdbCard refreshTrigger={refreshTrigger} />
-          </Grid>
+          </Grid> */}
 
           {/* Row 3: News */}
-          <Grid size={{ xs: 12 }}>
+          {/* <Grid size={{ xs: 12 }}>
             <NewsCard refreshTrigger={refreshTrigger} />
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </Box>
