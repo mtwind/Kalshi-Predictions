@@ -23,6 +23,7 @@ import TmdbCard from "@/components/sections/TmdbCard";
 import WikipediaCard from "@/components/sections/WikipediaCard";
 import YoutubeCard from "@/components/sections/YoutubeCard";
 
+import SummaryCard from "@/components/sections/SummaryCard";
 import { fetchLatestAnalysis, refreshAnalysis } from "../services/api";
 
 export default function Dashboard() {
@@ -123,9 +124,14 @@ export default function Dashboard() {
         ) : (
           <Grid container spacing={3}>
             {/* Row 1: High Priority - Kalshi & Wikipedia */}
+            <Grid size={{ xs: 12 }}>
+              <SummaryCard shows={data?.shows || []} />
+            </Grid>
+
             <Grid size={{ xs: 12, md: 6, lg: 4 }}>
               <KalshiCard shows={data?.shows || []} />
             </Grid>
+
             <Grid size={{ xs: 12, md: 6, lg: 4 }}>
               <WikipediaCard shows={data?.shows || []} />
             </Grid>
