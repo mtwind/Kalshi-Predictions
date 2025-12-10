@@ -23,7 +23,10 @@ interface Props {
 }
 
 export default function TmdbCard({ shows }: Props) {
-  const validShows = shows.filter((s) => s.tmdb && s.tmdb.score !== undefined);
+  // FIX: Filter using 'tmdb_score' instead of 'score'
+  const validShows = shows.filter(
+    (s) => s.tmdb && s.tmdb.tmdb_score !== undefined
+  );
 
   return (
     <Card sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
@@ -37,6 +40,11 @@ export default function TmdbCard({ shows }: Props) {
         <List disablePadding>
           {validShows.map((show, index) => {
             const t = show.tmdb;
+            const rating = t.vote_average ?? 0;
+            const popularity = t.popularity ?? 0;
+            // FIX: Read 'tmdb_score'
+            const score = t.tmdb_score ?? 0;
+
             return (
               <React.Fragment key={show.show_name}>
                 <ListItem sx={{ display: "block", py: 2 }}>
@@ -52,9 +60,9 @@ export default function TmdbCard({ shows }: Props) {
 
                     <Chip
                       icon={<ScoreIcon />}
-                      label={`Score: ${t.score}`}
+                      label={`Score: ${score}`}
                       size="small"
-                      color={t.score > 80 ? "success" : "primary"}
+                      color={score > 80 ? "success" : "primary"}
                       variant="filled"
                     />
                   </Box>
@@ -64,20 +72,45 @@ export default function TmdbCard({ shows }: Props) {
                     <Box display="flex" alignItems="center" gap={0.5}>
                       <StarIcon sx={{ color: "#FFC107", fontSize: 18 }} />
                       <Typography variant="body2" fontWeight="bold">
-                        {t.rating?.toFixed(1)}
+                        {rating.toFixed(1)}
                       </Typography>
+                      {/* Optional: Add vote count if available in your JSON */}
+                      {t.vote_count > 0 && (
+                        <Typography variant="caption" color="text.secondary">
+                          ({t.vote_count})
+                        </Typography>
+                      )}
                     </Box>
 
                     {/* Popularity */}
                     <Typography variant="caption" color="text.secondary">
-                      Pop: {t.popularity}
+                      Pop: {Math.round(popularity)}
                     </Typography>
+
+                    {/* Trending Rank (Optional) */}
+                    {t.trending_rank && (
+                      <Chip
+                        label={`#${t.trending_rank} Trending`}
+                        size="small"
+                        color="warning"
+                        variant="outlined"
+                        sx={{ height: 20, fontSize: "0.65rem" }}
+                      />
+                    )}
                   </Stack>
                 </ListItem>
                 {index < validShows.length - 1 && <Divider component="li" />}
               </React.Fragment>
             );
           })}
+
+          {validShows.length === 0 && (
+            <Box p={3} textAlign="center">
+              <Typography variant="caption" color="text.secondary">
+                No TMDB data available.
+              </Typography>
+            </Box>
+          )}
         </List>
       </CardContent>
     </Card>

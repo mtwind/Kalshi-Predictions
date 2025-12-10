@@ -13,7 +13,7 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import Grid from "@mui/material/Grid"; // Ensure using Grid2 if on MUI v6, or Grid on v5
+import Grid from "@mui/material/Grid"; // or Grid2 if using MUI v6
 import { useEffect, useState } from "react";
 
 // Components
@@ -32,7 +32,7 @@ export default function Dashboard() {
   const [lastUpdated, setLastUpdated] = useState<string>("");
   const [error, setError] = useState<string | null>(null);
 
-  // Initial Load
+  // Initial Load from the JSON Snapshot
   useEffect(() => {
     loadData();
   }, []);
@@ -122,21 +122,21 @@ export default function Dashboard() {
         ) : (
           <Grid container spacing={3}>
             {/* Row 1: High Priority - Kalshi & Wikipedia */}
-            <Grid size={{ xs: 12, md: 6, lg: 4 }}>
+            <Grid item xs={12} md={6} lg={4}>
               <KalshiCard shows={data?.shows || []} />
             </Grid>
-            <Grid size={{ xs: 12, md: 6, lg: 4 }}>
+            <Grid item xs={12} md={6} lg={4}>
               <WikipediaCard shows={data?.shows || []} />
             </Grid>
-            <Grid size={{ xs: 12, md: 12, lg: 4 }}>
+            <Grid item xs={12} md={12} lg={4}>
               <TmdbCard shows={data?.shows || []} />
             </Grid>
 
             {/* Row 2: Media & News */}
-            <Grid size={{ xs: 12, md: 6 }}>
+            <Grid item xs={12} md={6}>
               <YoutubeCard shows={data?.shows || []} />
             </Grid>
-            <Grid size={{ xs: 12, md: 6 }}>
+            <Grid item xs={12} md={6}>
               <NewsCard shows={data?.shows || []} />
             </Grid>
           </Grid>

@@ -24,7 +24,10 @@ interface Props {
 }
 
 export default function NewsCard({ shows }: Props) {
-  const validShows = shows.filter((s) => s.news && s.news.score !== undefined);
+  // FIX: Filter using 'news_score' instead of 'score'
+  const validShows = shows.filter(
+    (s) => s.news && s.news.news_score !== undefined
+  );
 
   const getSentimentColor = (score: number) => {
     if (score > 0.1) return "success.main";
@@ -44,6 +47,10 @@ export default function NewsCard({ shows }: Props) {
         <List disablePadding>
           {validShows.map((show, index) => {
             const n = show.news;
+            const sentiment = n.sentiment_score ?? 0; // Use sentiment_score from JSON
+            // FIX: Read 'news_score'
+            const score = n.news_score ?? 0;
+
             return (
               <React.Fragment key={show.show_name}>
                 <ListItem sx={{ display: "block", py: 2 }}>
@@ -58,9 +65,9 @@ export default function NewsCard({ shows }: Props) {
                     </Typography>
                     <Chip
                       icon={<ScoreIcon />}
-                      label={`Score: ${n.score}`}
+                      label={`Score: ${score}`}
                       size="small"
-                      color={n.score > 60 ? "success" : "primary"}
+                      color={score > 60 ? "success" : "primary"}
                       variant="filled"
                     />
                   </Box>
@@ -78,13 +85,13 @@ export default function NewsCard({ shows }: Props) {
                     <LinearProgress
                       variant="determinate"
                       // Normalize -1..1 to 0..100
-                      value={((n.sentiment + 1) / 2) * 100}
+                      value={((sentiment + 1) / 2) * 100}
                       sx={{
                         height: 6,
                         borderRadius: 3,
                         bgcolor: "#ffebee",
                         "& .MuiLinearProgress-bar": {
-                          bgcolor: getSentimentColor(n.sentiment),
+                          bgcolor: getSentimentColor(sentiment),
                         },
                       }}
                     />
@@ -94,10 +101,10 @@ export default function NewsCard({ shows }: Props) {
                       textAlign="center"
                       mt={0.5}
                       fontWeight="bold"
-                      color={getSentimentColor(n.sentiment)}
+                      color={getSentimentColor(sentiment)}
                     >
-                      {n.sentiment > 0 ? "+" : ""}
-                      {n.sentiment} Sentiment
+                      {sentiment > 0 ? "+" : ""}
+                      {sentiment} Sentiment
                     </Typography>
                   </Box>
 
@@ -111,19 +118,19 @@ export default function NewsCard({ shows }: Props) {
                     <Box display="flex" alignItems="center" gap={0.5}>
                       <ArticleIcon fontSize="small" color="action" />
                       <Typography variant="caption" color="text.secondary">
-                        {n.article_count} recent articles
+                        {n.article_count ?? 0} recent articles
                       </Typography>
                     </Box>
                   </Stack>
 
-                  {n.top_headline && (
+                  {n.top_articles && n.top_articles.length > 0 && (
                     <Box mt={1} p={1} bgcolor="#f5f5f5" borderRadius={1}>
                       <Typography
                         variant="caption"
                         fontStyle="italic"
                         color="text.primary"
                       >
-                        "{n.top_headline}"
+                        "{n.top_articles[0].title}"
                       </Typography>
                     </Box>
                   )}
@@ -132,6 +139,14 @@ export default function NewsCard({ shows }: Props) {
               </React.Fragment>
             );
           })}
+
+          {validShows.length === 0 && (
+            <Box p={3} textAlign="center">
+              <Typography variant="caption" color="text.secondary">
+                No News data available.
+              </Typography>
+            </Box>
+          )}
         </List>
       </CardContent>
     </Card>

@@ -17,6 +17,39 @@ from wikipedia.wikipedia_service import get_pageviews_daily
 DATA_DIR = Path("data/full-analysis")
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
+# --- DEFAULT MODELS (For Error Handling) ---
+DEFAULT_YOUTUBE_DATA = {
+    "totals": {
+        "total_views": 0,
+        "total_likes": 0,
+        "average_views": 0,
+        "average_likes": 0,
+        "like_percentage": 0,
+        "sentiment_average": 0,
+        "youtube_score": 0
+    },
+    "videos": []
+}
+
+DEFAULT_NEWS_DATA = {
+    "news_score": 0,
+    "article_count": 0,
+    "sentiment_score": 0,
+    "top_articles": []
+}
+
+DEFAULT_TMDB_DATA = {
+    "tmdb_score": 0,
+    "vote_average": 0,
+    "popularity": 0
+}
+
+DEFAULT_WIKI_DATA = {
+    "points": [],
+    "avg_daily_views": 0,
+    "total_weekly_views": 0
+}
+
 
 def _save_snapshot(payload: dict) -> str:
     ts = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
@@ -51,12 +84,21 @@ def normalize_show_name(raw_name: str) -> str:
 
 
 def run_full_analysis() -> Dict:
+    """
+    Orchestrates the data fetching.
+    If an API fails, it falls back to the DEFAULT objects defined above.
+    """
+    
     print("Starting full analysis...")
 
     # 1. Get Full Kalshi Data
-    all_markets = get_event_markets(NETFLIX_EVENT_TICKER)
-    markets_sorted = sorted(all_markets, key=_market_sort_key, reverse=True)
-    top_markets = markets_sorted[:5]
+    try:
+        all_markets = get_event_markets(NETFLIX_EVENT_TICKER)
+        markets_sorted = sorted(all_markets, key=_market_sort_key, reverse=True)
+        top_markets = markets_sorted[:5]
+    except Exception as e:
+        print(f"CRITICAL: Failed to fetch Kalshi markets: {e}")
+        return {"error": "Failed to fetch base market data", "shows": []}
     
     collected_data = []
     
@@ -82,30 +124,36 @@ def run_full_analysis() -> Dict:
         # 2. YouTube (20%)
         try:
             yt_data = get_show_analysis(clean_show_name)
-            # Extract score from the new 'totals' object
-            yt_score = float(yt_data.get("totals", {}).get("youtube_score", 0))
+            # Validate response has required keys, else use default
+            if "totals" not in yt_data:
+                yt_data = DEFAULT_YOUTUBE_DATA
         except Exception as e:
             print(f"Error fetching YouTube for {clean_show_name}: {e}")
-            yt_data = {"totals": {}, "videos": []}
-            yt_score = 0.0
+            yt_data = DEFAULT_YOUTUBE_DATA
+        
+        yt_score = float(yt_data["totals"].get("youtube_score", 0))
 
         # 3. News (15%)
         try:
             news_data = get_news_analysis(clean_show_name)
-            news_score = float(news_data.get("news_score", 0))
+            if "news_score" not in news_data: # Basic validation
+                news_data = DEFAULT_NEWS_DATA
         except Exception as e:
             print(f"Error fetching News for {clean_show_name}: {e}")
-            news_data = {}
-            news_score = 0.0
+            news_data = DEFAULT_NEWS_DATA
+            
+        news_score = float(news_data.get("news_score", 0))
 
         # 4. TMDB (10%)
         try:
             tmdb_data = get_tmdb_analysis(clean_show_name)
-            tmdb_score = float(tmdb_data.get("tmdb_score", 0))
+            if "tmdb_score" not in tmdb_data:
+                tmdb_data = DEFAULT_TMDB_DATA
         except Exception as e:
             print(f"Error fetching TMDB for {clean_show_name}: {e}")
-            tmdb_data = {}
-            tmdb_score = 0.0
+            tmdb_data = DEFAULT_TMDB_DATA
+            
+        tmdb_score = float(tmdb_data.get("tmdb_score", 0))
 
         # 5. Wikipedia (5%)
         wiki_article_title = clean_show_name.replace(" ", "_")
@@ -117,11 +165,19 @@ def run_full_analysis() -> Dict:
             )
             points = wiki_data.get("points", [])
             total_views = sum(p["views"] for p in points)
-            grand_total_wiki_views += total_views
+            
+            # Ensure the data object has the fields we expect later
             wiki_data["total_weekly_views"] = total_views
+            
+            # Calculate avg if missing
+            if "avg_daily_views" not in wiki_data:
+                 wiki_data["avg_daily_views"] = total_views // len(points) if points else 0
+
+            grand_total_wiki_views += total_views
+            
         except Exception as e:
             print(f"Error fetching Wiki for {clean_show_name}: {e}")
-            wiki_data = {"points": [], "total_weekly_views": 0}
+            wiki_data = DEFAULT_WIKI_DATA
             total_views = 0
 
         collected_data.append({
@@ -154,17 +210,17 @@ def run_full_analysis() -> Dict:
             (wiki_score * 0.05)
         )
         
+        # Inject Wiki Score for display
         item["wiki_data"]["score"] = round(wiki_score, 1)
         
         show_obj = {
             "show_name": item["clean_name"],
             "final_composite_score": round(weighted_score, 1),
             "kalshi": item["kalshi_data"],
-            # Structure Matches Request: Includes detailed videos AND totals
             "youtube": {
                 "score": item["yt_score"],
-                "totals": item["yt_data"].get("totals", {}),
-                "videos": item["yt_data"].get("videos", [])
+                "totals": item["yt_data"]["totals"],
+                "videos": item["yt_data"]["videos"]
             },
             "news": item["news_data"],
             "tmdb": item["tmdb_data"],
