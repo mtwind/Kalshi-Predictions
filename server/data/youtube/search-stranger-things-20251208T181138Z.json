@@ -1,0 +1,409 @@
+{
+  "query": "stranger things",
+  "max_results": 10,
+  "order": "relevance",
+  "published_after": null,
+  "count": 9,
+  "videos": [
+    {
+      "video_id": "6LYQGjElKeE",
+      "title": "Stranger Things 5 | Take a Break with Jake: Linda Hamilton &amp; Nell Fisher | Netflix",
+      "channel_title": "Stranger Things",
+      "published_at": "2025-12-07T18:00:13Z"
+    },
+    {
+      "video_id": "VMZGkaaHTFc",
+      "title": "The Most Epic Moment of Stranger Things Season 5! 🤯 The Final War Against Vecna!",
+      "channel_title": "React Doc.",
+      "published_at": "2025-12-07T10:00:52Z"
+    },
+    {
+      "video_id": "cEcIG87bxno",
+      "title": "They Were Just Kids...",
+      "channel_title": "Stranger Things",
+      "published_at": "2025-10-09T17:00:53Z"
+    },
+    {
+      "video_id": "sjfyhkfb5YU",
+      "title": "Stranger Things | Hot Ones Versus",
+      "channel_title": "First We Feast",
+      "published_at": "2025-12-02T18:00:07Z"
+    },
+    {
+      "video_id": "d5R6bJhb9nc",
+      "title": "How Well Do You Know the &quot;Stranger Things&quot; Cast?",
+      "channel_title": "TIME",
+      "published_at": "2025-10-16T18:03:36Z"
+    },
+    {
+      "video_id": "D8Qxxq0Oh9M",
+      "title": "Stranger Things 5 | Volume 1 Trailer | Netflix",
+      "channel_title": "Stranger Things",
+      "published_at": "2025-11-23T19:00:00Z"
+    },
+    {
+      "video_id": "wlBKZMw88sQ",
+      "title": "Stranger Things Cast Reveal Uncomfortable Truths in the Hot Seat | Vanity Fair",
+      "channel_title": "Vanity Fair",
+      "published_at": "2025-11-25T17:00:12Z"
+    },
+    {
+      "video_id": "90jeDJ_FqQk",
+      "title": "Stranger Things Has Changed...",
+      "channel_title": "schnee",
+      "published_at": "2025-12-07T16:00:40Z"
+    },
+    {
+      "video_id": "DzlcK4-LQgM",
+      "title": "Vecna Kills Patrick ☠️🔥 Stranger Things Season 5 #shorts #strangerthings",
+      "channel_title": "Nihaal Park",
+      "published_at": "2025-02-07T10:29:06Z"
+    }
+  ],
+  "raw": {
+    "kind": "youtube#searchListResponse",
+    "etag": "PJvhJAb_JzvrdlDhZ8bDBYcuoJw",
+    "nextPageToken": "CAoQAA",
+    "regionCode": "US",
+    "pageInfo": {
+      "totalResults": 1000000,
+      "resultsPerPage": 10
+    },
+    "items": [
+      {
+        "kind": "youtube#searchResult",
+        "etag": "T4u5YDHDJ0WzdLH5c0RoztQbpBY",
+        "id": {
+          "kind": "youtube#channel",
+          "channelId": "UChmpTxQ0Gp8KEJKsqzeg9Lg"
+        },
+        "snippet": {
+          "publishedAt": "2019-06-19T17:03:11Z",
+          "channelId": "UChmpTxQ0Gp8KEJKsqzeg9Lg",
+          "title": "Stranger Things",
+          "description": "VOL 1 — November 26, 5pm PT* VOL 2 — Christmas, 5pm PT* THE FINALE — New Year's Eve, 5pm PT*",
+          "thumbnails": {
+            "default": {
+              "url": "https://yt3.ggpht.com/d_tjHyMy0LAhHVtGAYIbgRfCjhnd_rx1zGXijuGN6tac1koLgp_Drw14J4WwJnCSKwLZNIk9SEY=s88-c-k-c0xffffffff-no-rj-mo"
+            },
+            "medium": {
+              "url": "https://yt3.ggpht.com/d_tjHyMy0LAhHVtGAYIbgRfCjhnd_rx1zGXijuGN6tac1koLgp_Drw14J4WwJnCSKwLZNIk9SEY=s240-c-k-c0xffffffff-no-rj-mo"
+            },
+            "high": {
+              "url": "https://yt3.ggpht.com/d_tjHyMy0LAhHVtGAYIbgRfCjhnd_rx1zGXijuGN6tac1koLgp_Drw14J4WwJnCSKwLZNIk9SEY=s800-c-k-c0xffffffff-no-rj-mo"
+            }
+          },
+          "channelTitle": "Stranger Things",
+          "liveBroadcastContent": "none",
+          "publishTime": "2019-06-19T17:03:11Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "ZaKYo1EIMJNkkVR6UA90kgaBbjk",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "6LYQGjElKeE"
+        },
+        "snippet": {
+          "publishedAt": "2025-12-07T18:00:13Z",
+          "channelId": "UChmpTxQ0Gp8KEJKsqzeg9Lg",
+          "title": "Stranger Things 5 | Take a Break with Jake: Linda Hamilton &amp; Nell Fisher | Netflix",
+          "description": "skip the blood. pass the grapes. and take a break with jake.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/6LYQGjElKeE/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/6LYQGjElKeE/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/6LYQGjElKeE/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Stranger Things",
+          "liveBroadcastContent": "none",
+          "publishTime": "2025-12-07T18:00:13Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "vzi3Lh-WM1KrdRmG_lHcal5k9qc",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "VMZGkaaHTFc"
+        },
+        "snippet": {
+          "publishedAt": "2025-12-07T10:00:52Z",
+          "channelId": "UCptWwttWvPzLxh0b6hj3fww",
+          "title": "The Most Epic Moment of Stranger Things Season 5! 🤯 The Final War Against Vecna!",
+          "description": "Stranger Things fans are eagerly awaiting Season 5! What will be that unforgettable, epic final battle where Eleven and the ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/VMZGkaaHTFc/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/VMZGkaaHTFc/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/VMZGkaaHTFc/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "React Doc.",
+          "liveBroadcastContent": "none",
+          "publishTime": "2025-12-07T10:00:52Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "UW_coqmQFk1SRjsl_QpfqcAwsAY",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "cEcIG87bxno"
+        },
+        "snippet": {
+          "publishedAt": "2025-10-09T17:00:53Z",
+          "channelId": "UChmpTxQ0Gp8KEJKsqzeg9Lg",
+          "title": "They Were Just Kids...",
+          "description": "they were just kids trying for the high score in dig dug.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/cEcIG87bxno/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/cEcIG87bxno/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/cEcIG87bxno/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Stranger Things",
+          "liveBroadcastContent": "none",
+          "publishTime": "2025-10-09T17:00:53Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "ZLBuY9aJk46QJgBa95D4cTKzr0E",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "sjfyhkfb5YU"
+        },
+        "snippet": {
+          "publishedAt": "2025-12-02T18:00:07Z",
+          "channelId": "UCPD_bxCRGpmmeQcbe2kpPaA",
+          "title": "Stranger Things | Hot Ones Versus",
+          "description": "Noah Schnapp, Finn Wolfhard, Caleb McLaughlin, and Gaten Matarazzo are the stars of the Netflix's global smash Stranger ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/sjfyhkfb5YU/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/sjfyhkfb5YU/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/sjfyhkfb5YU/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "First We Feast",
+          "liveBroadcastContent": "none",
+          "publishTime": "2025-12-02T18:00:07Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "aiBG9KlZ7tuIN0KZjLNMkNRd95E",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "d5R6bJhb9nc"
+        },
+        "snippet": {
+          "publishedAt": "2025-10-16T18:03:36Z",
+          "channelId": "UC8Su5vZCXWRag13H53zWVwA",
+          "title": "How Well Do You Know the &quot;Stranger Things&quot; Cast?",
+          "description": "The cast members of \"Stranger Things\" test how well they know one another after filming five seasons of the hit Netflix series.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/d5R6bJhb9nc/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/d5R6bJhb9nc/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/d5R6bJhb9nc/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "TIME",
+          "liveBroadcastContent": "none",
+          "publishTime": "2025-10-16T18:03:36Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "d-0hSZxtlJCqd9y8G26Q5x0_Xko",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "D8Qxxq0Oh9M"
+        },
+        "snippet": {
+          "publishedAt": "2025-11-23T19:00:00Z",
+          "channelId": "UChmpTxQ0Gp8KEJKsqzeg9Lg",
+          "title": "Stranger Things 5 | Volume 1 Trailer | Netflix",
+          "description": "We have a plan...it's a bit insane. Volume 1 of the final season of Stranger Things drops Nov. 26th at 5pm PT.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/D8Qxxq0Oh9M/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/D8Qxxq0Oh9M/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/D8Qxxq0Oh9M/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Stranger Things",
+          "liveBroadcastContent": "none",
+          "publishTime": "2025-11-23T19:00:00Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "tg-o_aCl2paZybOqTJhXDwdA8Yo",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "wlBKZMw88sQ"
+        },
+        "snippet": {
+          "publishedAt": "2025-11-25T17:00:12Z",
+          "channelId": "UCIsbLox_y9dCIMLd8tdC6qg",
+          "title": "Stranger Things Cast Reveal Uncomfortable Truths in the Hot Seat | Vanity Fair",
+          "description": "Is it just us, or is it getting hot in here? Millie Bobby Brown, Gaten Matarazzo, Caleb McLaughlin, Noah Schnapp, Sadie Sink and ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/wlBKZMw88sQ/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/wlBKZMw88sQ/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/wlBKZMw88sQ/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Vanity Fair",
+          "liveBroadcastContent": "none",
+          "publishTime": "2025-11-25T17:00:12Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "dT2xZ0fGP_1JZcIUJLSxRxVcjYY",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "90jeDJ_FqQk"
+        },
+        "snippet": {
+          "publishedAt": "2025-12-07T16:00:40Z",
+          "channelId": "UCIJhUaFcOoxyE4ImRpCaNhw",
+          "title": "Stranger Things Has Changed...",
+          "description": "HIDDEN Dimension vs ALTERNATE Dimension #eleven #willbyers #netflix — MORE STRANGER THINGS — How the FIXED ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/90jeDJ_FqQk/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/90jeDJ_FqQk/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/90jeDJ_FqQk/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "schnee",
+          "liveBroadcastContent": "none",
+          "publishTime": "2025-12-07T16:00:40Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "uqMOyPtKQX95KgZsitpi6hp2Kj8",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "DzlcK4-LQgM"
+        },
+        "snippet": {
+          "publishedAt": "2025-02-07T10:29:06Z",
+          "channelId": "UCAKzOe6YLVK7-p75Kpu-ejg",
+          "title": "Vecna Kills Patrick ☠️🔥 Stranger Things Season 5 #shorts #strangerthings",
+          "description": "Vecna Kills Patrick ☠️   Stranger Things Season 5 #shorts #strangerthings Stranger things season 5 Stranger things season 5 ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/DzlcK4-LQgM/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/DzlcK4-LQgM/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/DzlcK4-LQgM/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Nihaal Park",
+          "liveBroadcastContent": "none",
+          "publishTime": "2025-02-07T10:29:06Z"
+        }
+      }
+    ]
+  }
+}

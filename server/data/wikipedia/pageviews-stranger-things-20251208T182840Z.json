@@ -1,0 +1,432 @@
+{
+  "article_title": "Stranger_Things",
+  "project": "en.wikipedia",
+  "access": "all-access",
+  "agent": "all-agents",
+  "granularity": "daily",
+  "start_date": "2024-01-01",
+  "end_date": "2024-02-01",
+  "count": 32,
+  "points": [
+    {
+      "date": "20240101",
+      "views": 16123
+    },
+    {
+      "date": "20240102",
+      "views": 16265
+    },
+    {
+      "date": "20240103",
+      "views": 15005
+    },
+    {
+      "date": "20240104",
+      "views": 14801
+    },
+    {
+      "date": "20240105",
+      "views": 15152
+    },
+    {
+      "date": "20240106",
+      "views": 19447
+    },
+    {
+      "date": "20240107",
+      "views": 18511
+    },
+    {
+      "date": "20240108",
+      "views": 21483
+    },
+    {
+      "date": "20240109",
+      "views": 24041
+    },
+    {
+      "date": "20240110",
+      "views": 20883
+    },
+    {
+      "date": "20240111",
+      "views": 18855
+    },
+    {
+      "date": "20240112",
+      "views": 21224
+    },
+    {
+      "date": "20240113",
+      "views": 20775
+    },
+    {
+      "date": "20240114",
+      "views": 21098
+    },
+    {
+      "date": "20240115",
+      "views": 19231
+    },
+    {
+      "date": "20240116",
+      "views": 19644
+    },
+    {
+      "date": "20240117",
+      "views": 19627
+    },
+    {
+      "date": "20240118",
+      "views": 18118
+    },
+    {
+      "date": "20240119",
+      "views": 18495
+    },
+    {
+      "date": "20240120",
+      "views": 19112
+    },
+    {
+      "date": "20240121",
+      "views": 19300
+    },
+    {
+      "date": "20240122",
+      "views": 17311
+    },
+    {
+      "date": "20240123",
+      "views": 15890
+    },
+    {
+      "date": "20240124",
+      "views": 15789
+    },
+    {
+      "date": "20240125",
+      "views": 13872
+    },
+    {
+      "date": "20240126",
+      "views": 13402
+    },
+    {
+      "date": "20240127",
+      "views": 14451
+    },
+    {
+      "date": "20240128",
+      "views": 15167
+    },
+    {
+      "date": "20240129",
+      "views": 14035
+    },
+    {
+      "date": "20240130",
+      "views": 13824
+    },
+    {
+      "date": "20240131",
+      "views": 13477
+    },
+    {
+      "date": "20240201",
+      "views": 12906
+    }
+  ],
+  "raw": {
+    "items": [
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024010100",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 16123
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024010200",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 16265
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024010300",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 15005
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024010400",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 14801
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024010500",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 15152
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024010600",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 19447
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024010700",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 18511
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024010800",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 21483
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024010900",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 24041
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024011000",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 20883
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024011100",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 18855
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024011200",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 21224
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024011300",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 20775
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024011400",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 21098
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024011500",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 19231
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024011600",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 19644
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024011700",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 19627
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024011800",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 18118
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024011900",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 18495
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024012000",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 19112
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024012100",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 19300
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024012200",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 17311
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024012300",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 15890
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024012400",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 15789
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024012500",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 13872
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024012600",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 13402
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024012700",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 14451
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024012800",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 15167
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024012900",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 14035
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024013000",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 13824
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024013100",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 13477
+      },
+      {
+        "project": "en.wikipedia",
+        "article": "Stranger_Things",
+        "granularity": "daily",
+        "timestamp": "2024020100",
+        "access": "all-access",
+        "agent": "all-agents",
+        "views": 12906
+      }
+    ]
+  }
+}
