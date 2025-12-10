@@ -1,0 +1,126 @@
+{
+  "event_ticker": "KXNETFLIXRANKSHOW-25DEC15",
+  "count": 10,
+  "markets": [
+    {
+      "ticker": "KXNETFLIXRANKSHOW-25DEC15-SEA",
+      "title": "Top Netflix show on Dec 15, 2025?",
+      "yes_bid": 52,
+      "yes_ask": 98,
+      "no_bid": 2,
+      "no_ask": 48,
+      "last_price": 98,
+      "volume": 113,
+      "open_interest": 112,
+      "event_ticker": "KXNETFLIXRANKSHOW-25DEC15"
+    },
+    {
+      "ticker": "KXNETFLIXRANKSHOW-25DEC15-ABA",
+      "title": "Top Netflix show on Dec 15, 2025?",
+      "yes_bid": 0,
+      "yes_ask": 5,
+      "no_bid": 95,
+      "no_ask": 100,
+      "last_price": 5,
+      "volume": 1559,
+      "open_interest": 1559,
+      "event_ticker": "KXNETFLIXRANKSHOW-25DEC15"
+    },
+    {
+      "ticker": "KXNETFLIXRANKSHOW-25DEC15-STR",
+      "title": "Top Netflix show on Dec 15, 2025?",
+      "yes_bid": 3,
+      "yes_ask": 18,
+      "no_bid": 82,
+      "no_ask": 97,
+      "last_price": 18,
+      "volume": 1548,
+      "open_interest": 1548,
+      "event_ticker": "KXNETFLIXRANKSHOW-25DEC15"
+    },
+    {
+      "ticker": "KXNETFLIXRANKSHOW-25DEC15-WES",
+      "title": "Top Netflix show on Dec 15, 2025?",
+      "yes_bid": 1,
+      "yes_ask": 10,
+      "no_bid": 90,
+      "no_ask": 99,
+      "last_price": 9,
+      "volume": 103,
+      "open_interest": 103,
+      "event_ticker": "KXNETFLIXRANKSHOW-25DEC15"
+    },
+    {
+      "ticker": "KXNETFLIXRANKSHOW-25DEC15-STRANGER",
+      "title": "Top Netflix show on Dec 15, 2025?",
+      "yes_bid": 0,
+      "yes_ask": 1,
+      "no_bid": 99,
+      "no_ask": 100,
+      "last_price": 1,
+      "volume": 70,
+      "open_interest": 70,
+      "event_ticker": "KXNETFLIXRANKSHOW-25DEC15"
+    },
+    {
+      "ticker": "KXNETFLIXRANKSHOW-25DEC15-RAW",
+      "title": "Top Netflix show on Dec 15, 2025?",
+      "yes_bid": 0,
+      "yes_ask": 1,
+      "no_bid": 99,
+      "no_ask": 100,
+      "last_price": 1,
+      "volume": 303,
+      "open_interest": 303,
+      "event_ticker": "KXNETFLIXRANKSHOW-25DEC15"
+    },
+    {
+      "ticker": "KXNETFLIXRANKSHOW-25DEC15-LOV",
+      "title": "Top Netflix show on Dec 15, 2025?",
+      "yes_bid": 0,
+      "yes_ask": 1,
+      "no_bid": 99,
+      "no_ask": 100,
+      "last_price": 1,
+      "volume": 418,
+      "open_interest": 418,
+      "event_ticker": "KXNETFLIXRANKSHOW-25DEC15"
+    },
+    {
+      "ticker": "KXNETFLIXRANKSHOW-25DEC15-MAT",
+      "title": "Top Netflix show on Dec 15, 2025?",
+      "yes_bid": 0,
+      "yes_ask": 1,
+      "no_bid": 99,
+      "no_ask": 100,
+      "last_price": 1,
+      "volume": 85,
+      "open_interest": 85,
+      "event_ticker": "KXNETFLIXRANKSHOW-25DEC15"
+    },
+    {
+      "ticker": "KXNETFLIXRANKSHOW-25DEC15-THE",
+      "title": "Top Netflix show on Dec 15, 2025?",
+      "yes_bid": 0,
+      "yes_ask": 1,
+      "no_bid": 99,
+      "no_ask": 100,
+      "last_price": 1,
+      "volume": 85,
+      "open_interest": 85,
+      "event_ticker": "KXNETFLIXRANKSHOW-25DEC15"
+    },
+    {
+      "ticker": "KXNETFLIXRANKSHOW-25DEC15-STRANG",
+      "title": "Top Netflix show on Dec 15, 2025?",
+      "yes_bid": 0,
+      "yes_ask": 1,
+      "no_bid": 99,
+      "no_ask": 100,
+      "last_price": 1,
+      "volume": 85,
+      "open_interest": 85,
+      "event_ticker": "KXNETFLIXRANKSHOW-25DEC15"
+    }
+  ]
+}
