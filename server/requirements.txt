@@ -1,0 +1,13 @@
+praw
+python-dotenv
+requests
+fastapi
+uvicorn[standard]
+pytrends
+pydantic
+pandas
+sqlalchemy
+apscheduler
+httpx
+tenacity
+python-dateutil
