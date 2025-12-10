@@ -10,7 +10,7 @@ from .categories import category_to_id
 
 
 # Directory where JSON outputs will be stored
-DATA_DIR = Path("data")
+DATA_DIR = Path("data/trends")
 DATA_DIR.mkdir(exist_ok=True)
 
 # Shared pytrends client
@@ -89,7 +89,7 @@ def fetch_interest_single(
         "points": points,
     }
 
-    filename = f"{slugify(search_term)}-{start_date}_{end_date}-cat{cat_id}.json"
+    filename = f"single-{slugify(search_term)}-{start_date}_{end_date}-cat{cat_id}.json"
     save_to_json(payload, filename)
 
     return payload

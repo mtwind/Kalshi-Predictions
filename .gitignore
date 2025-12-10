@@ -1,3 +1,4 @@
 .env
 /server/data
 .venv
+kalshi_private_key.pem
