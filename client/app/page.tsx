@@ -123,25 +123,27 @@ export default function Dashboard() {
           </Box>
         ) : (
           <Grid container spacing={3}>
-            {/* Row 1: High Priority - Kalshi & Wikipedia */}
+            {/* Row 1: Trading Advice */}
             <Grid size={{ xs: 12 }}>
               <SummaryCard shows={data?.shows || []} />
             </Grid>
 
+            {/* Row 2: High Priority - Kalshi, Youtube, TMDB */}
             <Grid size={{ xs: 12, md: 6, lg: 4 }}>
               <KalshiCard shows={data?.shows || []} />
             </Grid>
 
             <Grid size={{ xs: 12, md: 6, lg: 4 }}>
-              <WikipediaCard shows={data?.shows || []} />
+              <YoutubeCard shows={data?.shows || []} />
             </Grid>
             <Grid size={{ xs: 12, md: 12, lg: 4 }}>
               <TmdbCard shows={data?.shows || []} />
             </Grid>
 
-            {/* Row 2: Media & News */}
-            <Grid size={{ xs: 12, md: 6 }}>
-              <YoutubeCard shows={data?.shows || []} />
+            {/* Row 3: News & Wikipedia */}
+
+            <Grid size={{ xs: 12, md: 6, lg: 4 }}>
+              <WikipediaCard shows={data?.shows || []} />
             </Grid>
             <Grid size={{ xs: 12, md: 6 }}>
               <NewsCard shows={data?.shows || []} />

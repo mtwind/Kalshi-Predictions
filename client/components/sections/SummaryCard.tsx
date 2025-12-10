@@ -26,17 +26,15 @@ interface Props {
 }
 
 export default function SummaryCard({ shows }: Props) {
-  // Shows are already sorted by Fair Price / Score from the backend
-
   const getRecommendationColor = (rec: string) => {
-    if (rec.includes("BUY")) return "success";
-    if (rec.includes("SELL")) return "error";
+    if (rec.includes("BUY YES")) return "success";
+    if (rec.includes("BUY NO")) return "error"; // Using red for "Short/No" actions
     return "default";
   };
 
   const getRecommendationIcon = (rec: string) => {
-    if (rec.includes("BUY")) return <TrendingUpIcon fontSize="small" />;
-    if (rec.includes("SELL")) return <TrendingDownIcon fontSize="small" />;
+    if (rec.includes("BUY YES")) return <TrendingUpIcon fontSize="small" />;
+    if (rec.includes("BUY NO")) return <TrendingDownIcon fontSize="small" />;
     return <TrendingFlatIcon fontSize="small" />;
   };
 
@@ -66,11 +64,17 @@ export default function SummaryCard({ shows }: Props) {
                 const rec = show.recommendation || "HOLD";
                 const edge = show.edge_points || 0;
 
-                // Determine which market price is relevant
-                const isBuy = rec.includes("BUY");
-                const marketPrice = isBuy
-                  ? show.kalshi?.yes_ask
-                  : show.kalshi?.yes_bid;
+                // Determine relevant market price
+                // BUY YES -> We pay Ask Price
+                // BUY NO  -> We effectively bet against Bid Price (Selling Yes)
+                let marketPrice = 0;
+                if (rec === "BUY YES") {
+                  marketPrice = show.kalshi?.yes_ask;
+                } else if (rec === "BUY NO") {
+                  marketPrice = show.kalshi?.yes_bid;
+                } else {
+                  marketPrice = show.kalshi?.last_price;
+                }
 
                 return (
                   <TableRow key={show.show_name} hover>
@@ -80,14 +84,12 @@ export default function SummaryCard({ shows }: Props) {
                       </Typography>
                     </TableCell>
 
-                    {/* Final Composite Score */}
                     <TableCell align="center">
                       <Typography variant="caption" fontWeight="bold">
                         {show.final_composite_score}
                       </Typography>
                     </TableCell>
 
-                    {/* Calculated Fair Price */}
                     <TableCell align="center">
                       <Box
                         sx={{
@@ -104,22 +106,22 @@ export default function SummaryCard({ shows }: Props) {
                       </Box>
                     </TableCell>
 
-                    {/* Market Price (Ask if Buy, Bid if Sell) */}
                     <TableCell align="center">
                       <Typography variant="caption" color="text.secondary">
                         {marketPrice ? `${marketPrice}¢` : "-"}
                       </Typography>
                     </TableCell>
 
-                    {/* Edge Points */}
                     <TableCell align="center">
                       {edge > 0 && (
                         <Typography
                           variant="caption"
                           fontWeight="bold"
-                          color={isBuy ? "success.main" : "error.main"}
+                          color={
+                            rec === "BUY YES" ? "success.main" : "error.main"
+                          }
                         >
-                          {isBuy ? "+" : "-"}
+                          {rec === "BUY YES" ? "+" : "-"}
                           {edge}
                         </Typography>
                       )}
@@ -128,7 +130,6 @@ export default function SummaryCard({ shows }: Props) {
                       )}
                     </TableCell>
 
-                    {/* Action Chip */}
                     <TableCell align="right">
                       <Chip
                         icon={getRecommendationIcon(rec)}
