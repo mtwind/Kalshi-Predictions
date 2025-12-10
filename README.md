@@ -59,3 +59,13 @@ uvicorn app:app --reload --port 8000
 npm install
 npm run dev
 ```
+
+## API Documentation
+
+| API                        | Required Format           | Example                   |
+| -------------------------- | ------------------------- | ------------------------- |
+| **Google Trends**          | `"YYYY-MM-DD YYYY-MM-DD"` | `"2025-12-02 2025-12-09"` |
+| **Wikipedia Pageviews**    | `YYYYMMDD`                | `20251202`                |
+| **TMDB**                   | `YYYY-MM-DD`              | `2025-12-02`              |
+| **YouTube**                | `YYYY-MM-DDTHH:MM:SSZ`    | `2025-12-09T00:00:00Z`    |
+| **Google News** (your API) | `YYYY-MM-DD`              | `2025-12-02`              |
